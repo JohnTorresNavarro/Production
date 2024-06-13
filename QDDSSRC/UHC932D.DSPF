@@ -1,0 +1,1310 @@
+     A          R SFL1                      SFL
+     A            QPUI000001     1A  O  2  2
+     A            BUTTONEDIT     1A  H
+     A            BUTTONPLAN     1A  H
+     A            CANCELED      10A  H
+     A            GRNAMES       40A  H
+     A            GROUPCOLOR    10A  H
+     A            HACCT          4S 0H
+     A            HSUB#          3S 0H
+     A            HTRST          3S 0H
+     A            SELTSA         1A  H
+     A            SGROUP#        7A  H
+     A            TRANSMIT       1A  H
+     A            TSA           12A  H
+     A            TYPE          17A  H
+     A          R QSFLCTL001                SFLCTL(SFL1)
+     A                                      SFLSIZ(0001)
+     A                                      SFLPAG(0001)
+     A                                      SFLDSP
+     A                                  1  2HTML('QPUISFLSFLCTL1')
+     A          R SFLCTL1
+     A                                  1  2HTML('QPUICTL1    SFL1      5    RS-
+     A                                      FLDSP    0    FSFLDSP    RSFLDSPCTL-
+     A                                       0    FSFLDSP    RSFLCLR    0    FS-
+     A                                      FLCLR    RSFLPAG    1    C2    16 R-
+     A                                      SFLSIZ    1    C2    17 0    1    R-
+     A                                      EMSG      2    C8    s1actnbrC25   -
+     A                                      Account number not found.FERRACCOUN-
+     A                                      T')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"sflctl1"},"items":[{"id":"Grid1-
+     A                                      ","field type":"grid","css class":"-
+     A                                      crystal-grid","left":"5px","top":"1-
+     A                                      21px","number of rows":"17","number-
+     A                                       of columns":"6","column widths":"8-
+     A                                      2,131,75,75,319,225","column headin-
+     A                                      gs":{"fieldName":"headings","dataLe-
+     A                                      ngth":"100","trimLeading":"false","-
+     A                                      trimTrailing":"true","blankFill":"f-
+     A                                      alse","rjZeroFill":"false","dataTyp-
+     A                                      e":"char","formatting":"Text","text-
+     A                                      Transform":"none"},"header height":-
+     A                                      "60","row height":"26","height":"47-
+     A                                      6px","width":"908px","record format-
+     A                                       name":"sfl1","display subfile":{"f-
+     A                                      ieldName":"sfldsp","customTrue":"",-
+     A                                      "customFalse":"","dataType":"indica-
+     A                                      tor","formatting":"Indicator","indF-
+     A                                      ormat":"true / false"},"display con-
+     A                                      trol record":{"fieldName":"sfldsp",-
+     A                                      "customTrue":"","customFalse":"","d-
+     A                                      ataType":"indicator","formatting":"-
+     A                                      Indicator","indFormat":"true / fals-
+     A                                      e"},"clear subfile":{"fieldName":"s-
+     A                                      flclr","customTrue":"","customFalse-
+     A                                      ":"","dataType":"indicator","format-
+     A                                      ting":"Indicator","indFormat":"true-
+     A                                       / false"},"sortable columns":"true-
+     A                                      ","resizable columns":"true","find -
+     A                                      option":"true","filter option":"tru-
+     A                                      e","reset option":"true","export op-
+     A                                      tion":"true","export file name":"uh-
+     A                                      cexp","export with headings":"true"-
+     A                                      ,"show bar":"true","xlsx export":"t-
+     A                                      rue","row font color":{"fieldName":-
+     A                                      "canceled","dataLength":"10","trimL-
+     A                                      eading":"false","trimTrailing":"tru-
+     A                                      e","blankFill":"false","rjZeroFill"-
+     A                                      :"false","dataType":"char","formatt-
+     A                                      ing":"Text","textTransform":"none"}-
+     A                                      ,"show quick filters":"true"},{"id"-
+     A                                      :"Label1","field type":"output fiel-
+     A                                      d","css class":"label","value":{"fi-
+     A                                      eldName":"PGMNAME","dataLength":"10-
+     A                                      ","trimLeading":"false","trimTraili-
+     A                                      ng":"true","blankFill":"false","rjZ-
+     A                                      eroFill":"false","dataType":"char",-
+     A                                      "formatting":"Text","textTransform"-
+     A                                      :"none","designValue":"[PGMNAME]"},-
+     A                                      "font size":"12px","font weight":"n-
+     A                                      ormal","text align":"left","left":"-
+     A                                      10px","top":"630px","width":"90px"}-
+     A                                      ,{"id":"HtmlContainer1_copy","field-
+     A                                       type":"html container","white spac-
+     A                                      e":"normal","html":"This is here to-
+     A                                       left justify the page in Genie","l-
+     A                                      eft":"830px","top":"15px","height":-
+     A                                      "75px","width":"105px","visibility"-
+     A                                      :"hidden"},{"id":"CssButton3","fiel-
+     A                                      d type":"css button","value":"Refre-
+     A                                      sh","left":"620px","top":"625px","w-
+     A                                      idth":"90px","theme":"E - Yellow","-
+     A                                      small button":"true","response":{"f-
+     A                                      ieldName":"btnRefresh","customTrue"-
+     A                                      :"","customFalse":"","dataType":"in-
+     A                                      dicator","formatting":"Indicator","-
+     A                                      indFormat":"1 / 0"},"shortcut key":-
+     A                                      "F5","visibility":"hidden"},{"id":"-
+     A                                      OutputField9","field type":"output -
+     A                                      field","css class":"outputField","v-
+     A                                      alue":{"fieldName":"T')
+     A                                  1  2HTML('itle","dataLength":"30","trim-
+     A                                      Leading":"false","trimTrailing":"tr-
+     A                                      ue","blankFill":"false","rjZeroFill-
+     A                                      ":"false","dataType":"char","format-
+     A                                      ting":"Text","textTransform":"none"-
+     A                                      ,"designValue":"[Title]"},"left":"5-
+     A                                      px","top":"60px","font size":"20px"-
+     A                                      ,"font weight":"bold"},{"id":"CssBu-
+     A                                      tton2","field type":"css button","v-
+     A                                      alue":"Add","left":"720px","top":"6-
+     A                                      25px","width":"90px","theme":"F - G-
+     A                                      reen","small button":"true","icon p-
+     A                                      osition":"left","icon":"check","res-
+     A                                      ponse":{"fieldName":"buttonAdd","cu-
+     A                                      stomTrue":"","customFalse":"","data-
+     A                                      Type":"indicator","formatting":"Ind-
+     A                                      icator","indFormat":"1 / 0"}},{"id"-
+     A                                      :"Label2","field type":"output fiel-
+     A                                      d","css class":"label","value":"Pos-
+     A                                      ition to:","left":"5px","top":"100p-
+     A                                      x","width":"85px","font size":"15px-
+     A                                      "},{"id":"CssButton1_copy","field t-
+     A                                      ype":"css button","value":"Back","r-
+     A                                      esponse":{"fieldName":"btnExit","cu-
+     A                                      stomTrue":"","customFalse":"","data-
+     A                                      Type":"indicator","formatting":"Ind-
+     A                                      icator","indFormat":"1 / 0"},"theme-
+     A                                      ":"B - Blue","icon position":"left"-
+     A                                      ,"icon":"delete","small button":"tr-
+     A                                      ue","shortcut key":"Escape","left":-
+     A                                      "825px","top":"625px","width":"90px-
+     A                                      "},{"id":"s1actnbr","field type":"t-
+     A                                      extbox","css class":"label","value"-
+     A                                      :{"fieldName":"s1ActNbr","dataLengt-
+     A                                      h":"15","trimLeading":"false","trim-
+     A                                      Trailing":"true","blankFill":"false-
+     A                                      ","rjZeroFill":"false","dataType":"-
+     A                                      char","formatting":"Text","textTran-
+     A                                      sform":"none","designValue":"[s1Act-
+     A                                      Nbr]"},"color":"#000000","font size-
+     A                                      ":"15px","font weight":"normal","te-
+     A                                      xt align":"left","set focus":"true"-
+     A                                      ,"changed":{"fieldName":"ActChgd","-
+     A                                      customTrue":"","customFalse":"","da-
+     A                                      taType":"indicator","formatting":"I-
+     A                                      ndicator","indFormat":"1 / 0"},"err-
+     A                                      or messages":"1 message","error mes-
+     A                                      sage":"Account number not found.","-
+     A                                      error condition":{"fieldName":"errA-
+     A                                      ccount","customTrue":"","customFals-
+     A                                      e":"","dataType":"indicator","forma-
+     A                                      tting":"Indicator","indFormat":"1 /-
+     A                                       0"},"error enhanced mode":"1","lef-
+     A                                      t":"110px","top":"100px","width":"1-
+     A                                      50px","onclick":"pui.set(s1actnbr,'-
+     A                                      ''');","height":"15px"},{"id":"Drop-
+     A                                      down1","field type":"select box","v-
+     A                                      alue":{"fieldName":"optionSel","dat-
+     A                                      aLength":"7","trimLeading":"false",-
+     A                                      "trimTrailing":"true","blankFill":"-
+     A                                      false","rjZeroFill":"false","dataTy-
+     A                                      pe":"char","formatting":"Text","tex-
+     A                                      tTransform":"none","designValue":"[-
+     A                                      optionSel]"},"font family":"Arial",-
+     A                                      "choices":"ALL,1,2,3,4,5,6,7,8,9,10-
+     A                                      ,11,12","choice values":"ALL,01,02,-
+     A                                      03,04,05,06,07,08,09,10,11,12","lef-
+     A                                      t":"830px","top":"100px","width":"6-
+     A                                      8px","visibility":{"fieldName":"sho-
+     A                                      wSel","customTrue":"","customFalse"-
+     A                                      :"","dataType":"indicator","formatt-
+     A                                      ing":"Indicator","ind')
+     A                                  1  2HTML('Format":"visible / hidden"},"-
+     A                                      onchange":"pui.click();  "},{"id":"-
+     A                                      Label3","field type":"output field"-
+     A                                      ,"css class":"label","value":"Selec-
+     A                                      t Renewal Month:","left":"660px","t-
+     A                                      op":"100px","width":"160px","visibi-
+     A                                      lity":{"fieldName":"showSel","custo-
+     A                                      mTrue":"","customFalse":"","dataTyp-
+     A                                      e":"indicator","formatting":"Indica-
+     A                                      tor","indFormat":"visible / hidden"-
+     A                                      }},{"id":"CssButton1","field type":-
+     A                                      "css button","value":"Send Test Fil-
+     A                                      e","left":"200px","top":"625px","wi-
+     A                                      dth":"140px","theme":"G - Red","sma-
+     A                                      ll button":"true","response":{"fiel-
+     A                                      dName":"btnTest","customTrue":"","c-
+     A                                      ustomFalse":"","dataType":"indicato-
+     A                                      r","formatting":"Indicator","indFor-
+     A                                      mat":"1 / 0"},"visibility":{"fieldN-
+     A                                      ame":"showTest","customTrue":"","cu-
+     A                                      stomFalse":"","dataType":"indicator-
+     A                                      ","formatting":"Indicator","indForm-
+     A                                      at":"visible / hidden"},"icon posit-
+     A                                      ion":"left","icon":"up arrow"},{"id-
+     A                                      ":"Label4","field type":"output fie-
+     A                                      ld","css class":"label","value":"Re-
+     A                                      d = Account Canceled","color":"#FF0-
+     A                                      000","text align":"left","left":"47-
+     A                                      0px","top":"100px","width":"170px"}-
+     A                                      ,{"id":"CssButton4","field type":"c-
+     A                                      ss button","value":"Mass Apr.","lef-
+     A                                      t":"500px","top":"625px","width":"1-
+     A                                      05px","theme":"A - Black","small bu-
+     A                                      tton":"true","response":{"fieldName-
+     A                                      ":"buttonMass","customTrue":"","cus-
+     A                                      tomFalse":"","dataType":"indicator"-
+     A                                      ,"formatting":"Indicator","indForma-
+     A                                      t":"1 / 0"},"icon":"grid","icon pos-
+     A                                      ition":"left","visibility":{"fieldN-
+     A                                      ame":"showApr","customTrue":"","cus-
+     A                                      tomFalse":"","dataType":"indicator"-
+     A                                      ,"formatting":"Indicator","indForma-
+     A                                      t":"visible / hidden"}},{"id":"CssB-
+     A                                      utton4_copy","field type":"css butt-
+     A                                      on","value":"Create Plans","respons-
+     A                                      e":{"fieldName":"buttonCrtP","custo-
+     A                                      mTrue":"","customFalse":"","dataTyp-
+     A                                      e":"indicator","formatting":"Indica-
+     A                                      tor","indFormat":"1 / 0"},"theme":"-
+     A                                      C - Gray","icon position":"left","i-
+     A                                      con":"grid","small button":"true","-
+     A                                      left":"370px","top":"625px","width"-
+     A                                      :"120px","visibility":{"fieldName":-
+     A                                      "showApr","customTrue":"","customFa-
+     A                                      lse":"","dataType":"indicator","for-
+     A                                      matting":"Indicator","indFormat":"v-
+     A                                      isible / hidden"}},{"id":"btnRefres-
+     A                                      h","field type":"image","response":-
+     A                                      {"fieldName":"btnRefresh","customTr-
+     A                                      ue":"","customFalse":"","dataType":-
+     A                                      "indicator","formatting":"Indicator-
+     A                                      ","indFormat":"1 / 0"},"image sourc-
+     A                                      e":"/profoundui/userdata/Images2/re-
+     A                                      fresh.png","shortcut key":"F5","lef-
+     A                                      t":"285px","top":"75px","height":"4-
+     A                                      0px","width":"45px","cursor":"point-
+     A                                      er","tool tip":"Refresh Page"},{"id-
+     A                                      ":"OutputField3","field type":"outp-
+     A                                      ut field","css class":"outputField"-
+     A                                      ,"value":{"fieldName":"GRNAMES","da-
+     A                                      taLength":"40","trimLeading":"false-
+     A                                      ","trimTrailing":"tru')
+     A                                  1  2HTML('e","blankFill":"false","rjZer-
+     A                                      oFill":"false","dataType":"char","f-
+     A                                      ormatting":"Text","textTransform":"-
+     A                                      none","designValue":"[GRNAMES]"},"l-
+     A                                      eft":"5px","top":"5px","color":{"fi-
+     A                                      eldName":"groupColor","dataLength":-
+     A                                      "10","trimLeading":"false","trimTra-
+     A                                      iling":"true","blankFill":"false","-
+     A                                      rjZeroFill":"false","dataType":"cha-
+     A                                      r","formatting":"Text","textTransfo-
+     A                                      rm":"none"},"height":"15px","grid":-
+     A                                      "Grid1","column":"4"},{"id":"Button-
+     A                                      3","field type":"image","left":"50p-
+     A                                      x","top":"5px","image source":"/pro-
+     A                                      foundui/proddata/images/icons/chang-
+     A                                      e.png","font weight":"bold","respon-
+     A                                      se":{"fieldName":"buttonEdit","cust-
+     A                                      omTrue":"","customFalse":"","dataTy-
+     A                                      pe":"indicator","formatting":"Indic-
+     A                                      ator","indFormat":"1 / 0"},"tool ti-
+     A                                      p":"Edit","grid":"Grid1","column":"-
+     A                                      0"},{"id":"OutputField1","field typ-
+     A                                      e":"hyperlink","css class":"link3",-
+     A                                      "value":{"fieldName":"TSA","dataLen-
+     A                                      gth":"12","trimLeading":"false","tr-
+     A                                      imTrailing":"true","blankFill":"fal-
+     A                                      se","rjZeroFill":"false","dataType"-
+     A                                      :"char","formatting":"Text","textTr-
+     A                                      ansform":"none","designValue":"[TSA-
+     A                                      ]"},"left":"10px","top":"5px","resp-
+     A                                      onse":{"fieldName":"seltsa","custom-
+     A                                      True":"","customFalse":"","dataType-
+     A                                      ":"indicator","formatting":"Indicat-
+     A                                      or","indFormat":"1 / 0"},"tool tip"-
+     A                                      :"Go to Account","grid":"Grid1","co-
+     A                                      lumn":"1"},{"id":"OutputField6","fi-
+     A                                      eld type":"output field","css class-
+     A                                      ":"outputField","value":{"fieldName-
+     A                                      ":"htrst","dataLength":"3","decPos"-
+     A                                      :"0","numSep":"false","zeroBalance"-
+     A                                      :"false","numBlankFill":"false","ze-
+     A                                      roFill":"false","noExtraSpaces":"fa-
+     A                                      lse","curSym":"","dataType":"zoned"-
+     A                                      ,"formatting":"Number","negNum":"-9-
+     A                                      99.00","units":"","designValue":"[h-
+     A                                      trst]"},"left":"50px","top":"5px","-
+     A                                      visibility":"hidden","grid":"Grid1"-
+     A                                      ,"column":"1"},{"id":"OutputField7"-
+     A                                      ,"field type":"output field","css c-
+     A                                      lass":"outputField","value":{"field-
+     A                                      Name":"hsub#","dataLength":"3","dec-
+     A                                      Pos":"0","numSep":"false","zeroBala-
+     A                                      nce":"false","numBlankFill":"false"-
+     A                                      ,"zeroFill":"false","noExtraSpaces"-
+     A                                      :"false","curSym":"","dataType":"zo-
+     A                                      ned","formatting":"Number","negNum"-
+     A                                      :"-999.00","units":"","designValue"-
+     A                                      :"[hsub#]"},"left":"95px","top":"5p-
+     A                                      x","visibility":"hidden","grid":"Gr-
+     A                                      id1","column":"1"},{"id":"OutputFie-
+     A                                      ld8","field type":"output field","c-
+     A                                      ss class":"outputField","value":{"f-
+     A                                      ieldName":"hacct","dataLength":"4",-
+     A                                      "decPos":"0","numSep":"false","zero-
+     A                                      Balance":"false","numBlankFill":"fa-
+     A                                      lse","zeroFill":"false","noExtraSpa-
+     A                                      ces":"false","curSym":"","dataType"-
+     A                                      :"zoned","formatting":"Number","neg-
+     A                                      Num":"-999.00","units":"","designVa-
+     A                                      lue":"[hacct]"},"left":"145px","top-
+     A                                      ":"5px","visibility":"hidden","grid-
+     A                                      ":"Grid1","column":"1')
+     A                                  1  2HTML('"},{"id":"Button3_copy","fiel-
+     A                                      d type":"image","response":{"fieldN-
+     A                                      ame":"buttonPlan","customTrue":"","-
+     A                                      customFalse":"","dataType":"indicat-
+     A                                      or","formatting":"Indicator","indFo-
+     A                                      rmat":"1 / 0"},"font weight":"bold"-
+     A                                      ,"image source":"/profoundui/prodda-
+     A                                      ta/images/icons/add.png","left":"10-
+     A                                      px","top":"5px","description":"Plan-
+     A                                      s","tool tip":"Plans","grid":"Grid1-
+     A                                      ","column":"0"},{"id":"OutputField2-
+     A                                      ","field type":"output field","css -
+     A                                      class":"outputField","value":{"fiel-
+     A                                      dName":"Transmit","dataLength":"1",-
+     A                                      "trimLeading":"false","trimTrailing-
+     A                                      ":"true","blankFill":"false","rjZer-
+     A                                      oFill":"false","dataType":"char","f-
+     A                                      ormatting":"Text","textTransform":"-
+     A                                      none","designValue":"[Transmit]"},"-
+     A                                      left":"25px","top":"5px","text alig-
+     A                                      n":"center","width":"25px","grid":"-
+     A                                      Grid1","column":"3"},{"id":"OutputF-
+     A                                      ield4","field type":"output field",-
+     A                                      "css class":"outputField","value":{-
+     A                                      "fieldName":"Type","dataLength":"17-
+     A                                      ","trimLeading":"false","trimTraili-
+     A                                      ng":"true","blankFill":"false","rjZ-
+     A                                      eroFill":"false","dataType":"char",-
+     A                                      "formatting":"Text","textTransform"-
+     A                                      :"none","designValue":"[Type]"},"le-
+     A                                      ft":"10px","top":"5px","grid":"Grid-
+     A                                      1","column":"5"},{"id":"OutputField-
+     A                                      5","field type":"output field","css-
+     A                                       class":"outputField","value":{"fie-
+     A                                      ldName":"sgroup#","dataLength":"7",-
+     A                                      "trimLeading":"false","trimTrailing-
+     A                                      ":"true","blankFill":"false","rjZer-
+     A                                      oFill":"false","dataType":"char","f-
+     A                                      ormatting":"Text","textTransform":"-
+     A                                      none","designValue":"[sgroup#]"},"l-
+     A                                      eft":"15px","top":"5px","grid":"Gri-
+     A                                      d1","column":"2"}]}')
+     A            ACTCHGD        1A  H
+     A            BTNEXIT        1A  H
+     A            BTNREFRESH     1A  H
+     A            BTNTEST        1A  H
+     A            BUTTONADD      1A  H
+     A            BUTTONCRTP     1A  H
+     A            BUTTONMASS     1A  H
+     A            ERRACCOUNT     1A  H
+     A            HEADINGS     100A  H
+     A            OPTIONSEL      7A  H
+     A            PGMNAME       10A  H
+     A            S1ACTNBR      15A  H
+     A            SFLCLR         1A  H
+     A            SFLDSP         1A  H
+     A            SHOWAPR        1A  H
+     A            SHOWSEL        1A  H
+     A            SHOWTEST       1A  H
+     A            TITLE         30A  H
+     A          R MAINTDTL
+     A                                  1  2HTML('QPUIREC5    RWINDOW    0     -
+     A                                      REMSG      2    C13   TextBox2_copy-
+     A                                      C13   Invalid TrustFERRTRUST  REMSG-
+     A                                            2    C8    TextBox2C11   Inva-
+     A                                      lid SubFERRSUB    REMSG      2    C-
+     A                                      8    TextBox3C15   Invalid AccountF-
+     A                                      ERRACCT   REMSG      2    C13   Tex-
+     A                                      tBox3_copyC26   Please Enter Submis-
+     A                                      sion IDFERRID     ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"Maintdtl","show as window":"tru-
+     A                                      e"},"items":[{"id":"Panel1","field -
+     A                                      type":"panel","left":"115px","top":-
+     A                                      "45px","width":"590px","height":"53-
+     A                                      5px","panel style":"Simple","z inde-
+     A                                      x":"8","value":"Maintain Record","t-
+     A                                      ext align":"center","font weight":"-
+     A                                      bold","font size":"12px"},{"id":"La-
+     A                                      bel2","field type":"output field","-
+     A                                      css class":"label","value":"Trust:"-
+     A                                      ,"left":"150px","top":"140px","widt-
+     A                                      h":"120px","font family":"Arial","c-
+     A                                      olor":"#000000"},{"id":"TextBox2_co-
+     A                                      py","field type":"textbox","css cla-
+     A                                      ss":"input","value":{"fieldName":"S-
+     A                                      TRST","dataLength":"3","decPos":"0"-
+     A                                      ,"numSep":"false","zeroBalance":"fa-
+     A                                      lse","numBlankFill":"false","zeroFi-
+     A                                      ll":"false","noExtraSpaces":"false"-
+     A                                      ,"curSym":"","dataType":"zoned","fo-
+     A                                      rmatting":"Number","negNum":"-999.0-
+     A                                      0","units":"","designValue":"[STRST-
+     A                                      ]"},"left":"285px","top":"140px","e-
+     A                                      rror messages":"1 message","width":-
+     A                                      "50px","error message":"Invalid Tru-
+     A                                      st","error condition":{"fieldName":-
+     A                                      "errTrust","customTrue":"","customF-
+     A                                      alse":"","dataType":"indicator","fo-
+     A                                      rmatting":"Indicator","indFormat":"-
+     A                                      1 / 0"},"error enhanced mode":"1","-
+     A                                      allow field exit":"true"},{"id":"La-
+     A                                      bel2_copy","field type":"output fie-
+     A                                      ld","css class":"label","value":"Su-
+     A                                      b:","left":"155px","top":"180px","w-
+     A                                      idth":"115px","font family":"Arial"-
+     A                                      ,"color":"#000000"},{"id":"TextBox2-
+     A                                      ","field type":"textbox","css class-
+     A                                      ":"input","value":{"fieldName":"SSU-
+     A                                      B#","dataLength":"3","decPos":"0","-
+     A                                      numSep":"false","zeroBalance":"fals-
+     A                                      e","numBlankFill":"false","zeroFill-
+     A                                      ":"false","noExtraSpaces":"false","-
+     A                                      curSym":"","dataType":"zoned","form-
+     A                                      atting":"Number","negNum":"-999.00"-
+     A                                      ,"units":"","designValue":"[SSUB#]"-
+     A                                      },"left":"285px","top":"180px","err-
+     A                                      or messages":"1 message","width":"5-
+     A                                      0px","error message":"Invalid Sub",-
+     A                                      "error condition":{"fieldName":"err-
+     A                                      Sub","customTrue":"","customFalse":-
+     A                                      "","dataType":"indicator","formatti-
+     A                                      ng":"Indicator","indFormat":"1 / 0"-
+     A                                      },"error enhanced mode":"1","allow -
+     A                                      field exit":"true"},{"id":"Label2_c-
+     A                                      opy2","field type":"output field","-
+     A                                      css class":"label","value":"Account-
+     A                                      :","left":"210px","top":"220px","wi-
+     A                                      dth":"60px","font family":"Arial","-
+     A                                      color":"#000000"},{"id":"TextBox3",-
+     A                                      "field type":"textbox","css class":-
+     A                                      "input","value":{"fieldName":"SACCT-
+     A                                      ","dataLength":"4","decPos":"0","nu-
+     A                                      mSep":"false","zeroBalance":"false"-
+     A                                      ,"numBlankFill":"false","zeroFill":-
+     A                                      "false","noExtraSpaces":"false","cu-
+     A                                      rSym":"","dataType":"zoned","format-
+     A                                      ting":"Number","negNum":"-999.00","-
+     A                                      units":"","designValue":"[SACCT]"},-
+     A                                      "left":"285px","top":"220px","width-
+     A                                      ":"50px","error messages":"1 messag-
+     A                                      e","error message":"I')
+     A                                  1  2HTML('nvalid Account","error condit-
+     A                                      ion":{"fieldName":"errAcct","custom-
+     A                                      True":"","customFalse":"","dataType-
+     A                                      ":"indicator","formatting":"Indicat-
+     A                                      or","indFormat":"1 / 0"},"error enh-
+     A                                      anced mode":"1","allow field exit":-
+     A                                      "true"},{"id":"Label2_copy6","field-
+     A                                       type":"output field","css class":"-
+     A                                      label","value":"Submission ID:","le-
+     A                                      ft":"150px","top":"255px","width":"-
+     A                                      120px","font family":"Arial","color-
+     A                                      ":"#000000"},{"id":"TextBox3_copy",-
+     A                                      "field type":"textbox","css class":-
+     A                                      "input","value":{"fieldName":"subid-
+     A                                      ","dataLength":"12","trimLeading":"-
+     A                                      false","trimTrailing":"true","blank-
+     A                                      Fill":"false","rjZeroFill":"false",-
+     A                                      "dataType":"char","formatting":"Tex-
+     A                                      t","textTransform":"uppercase","des-
+     A                                      ignValue":"[subid]"},"error message-
+     A                                      s":"1 message","left":"285px","top"-
+     A                                      :"255px","width":"105px","error mes-
+     A                                      sage":"Please Enter Submission ID",-
+     A                                      "error condition":{"fieldName":"err-
+     A                                      ID","customTrue":"","customFalse":"-
+     A                                      ","dataType":"indicator","formattin-
+     A                                      g":"Indicator","indFormat":"1 / 0"}-
+     A                                      ,"error enhanced mode":"1","text tr-
+     A                                      ansform":"uppercase"},{"id":"Label5-
+     A                                      ","field type":"output field","css -
+     A                                      class":"label","value":" - GBSEDIPR-
+     A                                      IME for Prime Accounts","left":"390-
+     A                                      px","top":"255px","width":"250px","-
+     A                                      text align":"left","font family":"A-
+     A                                      rial","color":"#000000"},{"id":"Lab-
+     A                                      el2_copy3","field type":"output fie-
+     A                                      ld","css class":"label","value":"Me-
+     A                                      d Group #: ","left":"180px","top":"-
+     A                                      295px","width":"90px","visibility":-
+     A                                      {"fieldName":"show","customTrue":""-
+     A                                      ,"customFalse":"","dataType":"indic-
+     A                                      ator","formatting":"Indicator","ind-
+     A                                      Format":"visible / hidden"},"font f-
+     A                                      amily":"Arial","color":"#000000"},{-
+     A                                      "id":"TextBox5","field type":"textb-
+     A                                      ox","css class":"input","value":{"f-
+     A                                      ieldName":"medgroup#","dataLength":-
+     A                                      "7","trimLeading":"false","trimTrai-
+     A                                      ling":"true","blankFill":"false","r-
+     A                                      jZeroFill":"false","dataType":"char-
+     A                                      ","formatting":"Text","textTransfor-
+     A                                      m":"none","designValue":"[medgroup#-
+     A                                      ]"},"left":"285px","top":"295px","v-
+     A                                      isibility":{"fieldName":"show","cus-
+     A                                      tomTrue":"","customFalse":"","dataT-
+     A                                      ype":"indicator","formatting":"Indi-
+     A                                      cator","indFormat":"visible / hidde-
+     A                                      n"}},{"id":"Label2_copy4","field ty-
+     A                                      pe":"output field","css class":"lab-
+     A                                      el","value":"Den Group #: ","left":-
+     A                                      "180px","top":"330px","width":"90px-
+     A                                      ","visibility":{"fieldName":"show",-
+     A                                      "customTrue":"","customFalse":"","d-
+     A                                      ataType":"indicator","formatting":"-
+     A                                      Indicator","indFormat":"visible / h-
+     A                                      idden"},"font family":"Arial","colo-
+     A                                      r":"#000000"},{"id":"TextBox6","fie-
+     A                                      ld type":"textbox","css class":"inp-
+     A                                      ut","value":{"fieldName":"dengroup#-
+     A                                      ","dataLength":"7","trimLeading":"f-
+     A                                      alse","trimTrailing":"true","blankF-
+     A                                      ill":"false","rjZeroF')
+     A                                  1  2HTML('ill":"false","dataType":"char-
+     A                                      ","formatting":"Text","textTransfor-
+     A                                      m":"none","designValue":"[dengroup#-
+     A                                      ]"},"left":"285px","top":"330px","v-
+     A                                      isibility":{"fieldName":"show","cus-
+     A                                      tomTrue":"","customFalse":"","dataT-
+     A                                      ype":"indicator","formatting":"Indi-
+     A                                      cator","indFormat":"visible / hidde-
+     A                                      n"}},{"id":"Label2_copy5","field ty-
+     A                                      pe":"output field","css class":"lab-
+     A                                      el","value":"Vis Group #: ","left":-
+     A                                      "180px","top":"365px","width":"90px-
+     A                                      ","visibility":{"fieldName":"show",-
+     A                                      "customTrue":"","customFalse":"","d-
+     A                                      ataType":"indicator","formatting":"-
+     A                                      Indicator","indFormat":"visible / h-
+     A                                      idden"},"font family":"Arial","colo-
+     A                                      r":"#000000"},{"id":"TextBox7","fie-
+     A                                      ld type":"textbox","css class":"inp-
+     A                                      ut","value":{"fieldName":"visgroup#-
+     A                                      ","dataLength":"7","trimLeading":"f-
+     A                                      alse","trimTrailing":"true","blankF-
+     A                                      ill":"false","rjZeroFill":"false","-
+     A                                      dataType":"char","formatting":"Text-
+     A                                      ","textTransform":"none","designVal-
+     A                                      ue":"[visgroup#]"},"left":"285px","-
+     A                                      top":"365px","visibility":{"fieldNa-
+     A                                      me":"show","customTrue":"","customF-
+     A                                      alse":"","dataType":"indicator","fo-
+     A                                      rmatting":"Indicator","indFormat":"-
+     A                                      visible / hidden"}},{"id":"Label3",-
+     A                                      "field type":"output field","css cl-
+     A                                      ass":"label","value":"Transmit?","l-
+     A                                      eft":"165px","top":"405px","width":-
+     A                                      "105px","font family":"Arial","colo-
+     A                                      r":"#000000"},{"id":"Dropdown2","fi-
+     A                                      eld type":"select box","value":{"fi-
+     A                                      eldName":"stransmit","dataLength":"-
+     A                                      1","trimLeading":"false","trimTrail-
+     A                                      ing":"true","blankFill":"false","rj-
+     A                                      ZeroFill":"false","dataType":"char"-
+     A                                      ,"formatting":"Text","textTransform-
+     A                                      ":"none","designValue":"[stransmit]-
+     A                                      "},"choices":"Y,N,1,2,3,4,5,6,7,8,9-
+     A                                      ","choice values":"Y,N,1,2,3,4,5,6,-
+     A                                      7,8,9","left":"285px","top":"405px"-
+     A                                      ,"width":"55px"},{"id":"Label4","fi-
+     A                                      eld type":"output field","css class-
+     A                                      ":"label","value":"Y=Transmit; N=Do-
+     A                                      n''t Transmit","left":"355px","top"-
+     A                                      :"405px","width":"200px","text alig-
+     A                                      n":"left","font family":"Arial","co-
+     A                                      lor":"#000000"},{"id":"Label4_copy"-
+     A                                      ,"field type":"output field","css c-
+     A                                      lass":"label","value":"1 - 9 = Test-
+     A                                      ing","left":"355px","top":"425px","-
+     A                                      width":"100px","text align":"left",-
+     A                                      "font family":"Arial","color":"#000-
+     A                                      000"},{"id":"Checkbox1","field type-
+     A                                      ":"checkbox","css class":"label","v-
+     A                                      alue":{"fieldName":"OEcheck","dataL-
+     A                                      ength":"1","trimLeading":"false","t-
+     A                                      rimTrailing":"true","blankFill":"fa-
+     A                                      lse","rjZeroFill":"false","dataType-
+     A                                      ":"char","formatting":"Text","textT-
+     A                                      ransform":"none","designValue":"[OE-
+     A                                      check]"},"font weight":"bold","chec-
+     A                                      ked value":"Y","label":"OE File","l-
+     A                                      eft":"235px","top":"460px","font fa-
+     A                                      mily":"Arial","color":"#000000"},{"-
+     A                                      id":"RadioButton1_copy","field type-
+     A                                      ":"radio button","val')
+     A                                  1  2HTML('ue":"GBSCOBRA","radio button -
+     A                                      group":{"fieldName":"cobraFlag","da-
+     A                                      taLength":"8","trimLeading":"false"-
+     A                                      ,"trimTrailing":"true","blankFill":-
+     A                                      "false","rjZeroFill":"false","dataT-
+     A                                      ype":"char","formatting":"Text","te-
+     A                                      xtTransform":"none","keywords":[]},-
+     A                                      "label":"GBS Cobra","left":"345px",-
+     A                                      "top":"460px","onclick":"applyPrope-
+     A                                      rty(\"Layout3\", \"visibility\", \"-
+     A                                      hidden\");  \napplyProperty(\"Layou-
+     A                                      t2\", \"visibility\", \"visible\");-
+     A                                        \n \napplyProperty(\"Layout3\", \-
+     A                                      "field type\", \"layout\");\napplyP-
+     A                                      roperty(\"Layout2\", \"field type\"-
+     A                                      , \"layout\");\n\napplyProperty(\"s-
+     A                                      rchname\", \"set focus\", \"false\"-
+     A                                      );\napplyProperty(\"srchCarId\", \"-
+     A                                      set focus\", \"true\");  \n\napplyP-
+     A                                      roperty(\"srchname\", \"field type\-
+     A                                      ", \"textbox\");\napplyProperty(\"s-
+     A                                      rchCarId\", \"field type\", \"textb-
+     A                                      ox\");","font weight":"bold","font -
+     A                                      family":"Arial","color":"#000000"},-
+     A                                      {"id":"RadioButton1_copy2","field t-
+     A                                      ype":"radio button","value":"UHCCOB-
+     A                                      RA","radio button group":{"fieldNam-
+     A                                      e":"cobraFlag","dataLength":"8","tr-
+     A                                      imLeading":"false","trimTrailing":"-
+     A                                      true","blankFill":"false","rjZeroFi-
+     A                                      ll":"false","dataType":"char","form-
+     A                                      atting":"Text","textTransform":"non-
+     A                                      e"},"label":"UHC Cobra","left":"445-
+     A                                      px","top":"460px","onclick":"applyP-
+     A                                      roperty(\"Layout3\", \"visibility\"-
+     A                                      , \"visible\");  \napplyProperty(\"-
+     A                                      Layout2\", \"visibility\", \"hidden-
+     A                                      \");  \n \napplyProperty(\"Layout3\-
+     A                                      ", \"field type\", \"layout\");\nap-
+     A                                      plyProperty(\"Layout2\", \"field ty-
+     A                                      pe\", \"layout\");\n\napplyProperty-
+     A                                      (\"srchname\", \"set focus\", \"tru-
+     A                                      e\");\napplyProperty(\"srchCarId\",-
+     A                                       \"set focus\", \"false\");  \n\nap-
+     A                                      plyProperty(\"srchname\", \"field t-
+     A                                      ype\", \"textbox\");\napplyProperty-
+     A                                      (\"srchCarId\", \"field type\", \"t-
+     A                                      extbox\");","font weight":"bold","f-
+     A                                      ont family":"Arial","color":"#00000-
+     A                                      0"},{"id":"Button2","field type":"g-
+     A                                      raphic button","value":"Update","le-
+     A                                      ft":"220px","top":"530px","width":"-
+     A                                      100px","image source":"/profoundui/-
+     A                                      proddata/images/icons/accept.png","-
+     A                                      color":"#0ca81d","font weight":"bol-
+     A                                      d","response":{"fieldName":"btnUpdR-
+     A                                      cd","customTrue":"","customFalse":"-
+     A                                      ","dataType":"indicator","formattin-
+     A                                      g":"Indicator","indFormat":"1 / 0"}-
+     A                                      ,"shortcut key":"Enter"},{"id":"But-
+     A                                      ton1","field type":"graphic button"-
+     A                                      ,"value":"Cancel","left":"410px","t-
+     A                                      op":"530px","width":"100px","image -
+     A                                      source":"/profoundui/proddata/image-
+     A                                      s/icons/cancel.png","color":"#b1191-
+     A                                      9","font weight":"bold","response":-
+     A                                      {"fieldName":"btnExtEdt","customTru-
+     A                                      e":"","customFalse":"","dataType":"-
+     A                                      indicator","formatting":"Indicator"-
+     A                                      ,"indFormat":"1 / 0"},"shortcut key-
+     A                                      ":"Escape"},{"id":"Label1","field t-
+     A                                      ype":"output field","')
+     A                                  1  2HTML('css class":"label","value":"P-
+     A                                      rime: GBS Selection will not send C-
+     A                                      OBRA member","text align":"left","l-
+     A                                      eft":"350px","top":"485px","width":-
+     A                                      "340px","font family":"Arial","colo-
+     A                                      r":"#000000"},{"id":"Label1_copy","-
+     A                                      field type":"output field","css cla-
+     A                                      ss":"label","value":"UNET:  GBS Sel-
+     A                                      ection tells UHC we manage COBRA","-
+     A                                      text align":"left","left":"350px","-
+     A                                      top":"505px","width":"340px","font -
+     A                                      family":"Arial","color":"#000000"}]-
+     A                                      }')
+     A            BTNEXTEDT      1A  H
+     A            BTNUPDRCD      1A  H
+     A            COBRAFLAG      8A  H
+     A            DENGROUP#      7A  H
+     A            ERRACCT        1A  H
+     A            ERRID          1A  H
+     A            ERRSUB         1A  H
+     A            ERRTRUST       1A  H
+     A            MEDGROUP#      7A  H
+     A            OECHECK        1A  H
+     A            SACCT          4S 0H
+     A            SHOW           1A  H
+     A            SSUB#          3S 0H
+     A            STRANSMIT      1A  H
+     A            STRST          3S 0H
+     A            SUBID         12A  H
+     A            VISGROUP#      7A  H
+     A          R ADDDTL
+     A                                  1  2HTML('QPUIREC5    RWINDOW    0     -
+     A                                      REMSG      2    C8    TextBox1C15  -
+     A                                       Trust Not FoundFERRTRUST  REMSG   -
+     A                                         2    C8    TextBox2C18   Invalid-
+     A                                       Sub NumberFERRSUB    REMSG      2 -
+     A                                         C8    TextBox3C15   Invalid acco-
+     A                                      untFERRACCT   REMSG      2    C13  -
+     A                                       TextBox3_copyC26   Please Enter Su-
+     A                                      bmission IDFERRID     ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"Adddtl","show as window":"true"-
+     A                                      },"items":[{"id":"Panel1","field ty-
+     A                                      pe":"panel","left":"115px","top":"4-
+     A                                      5px","width":"590px","height":"535p-
+     A                                      x","panel style":"Simple","z index"-
+     A                                      :"8","value":"Add Record","text ali-
+     A                                      gn":"center","font weight":"bold","-
+     A                                      font size":"12px"},{"id":"Label2","-
+     A                                      field type":"output field","css cla-
+     A                                      ss":"label","value":"Trust:","left"-
+     A                                      :"150px","top":"140px","width":"120-
+     A                                      px","color":"#000000","font family"-
+     A                                      :"Arial"},{"id":"TextBox1","field t-
+     A                                      ype":"textbox","css class":"input",-
+     A                                      "value":{"fieldName":"STRST","dataL-
+     A                                      ength":"3","decPos":"0","numSep":"f-
+     A                                      alse","zeroBalance":"false","numBla-
+     A                                      nkFill":"false","zeroFill":"false",-
+     A                                      "noExtraSpaces":"false","curSym":""-
+     A                                      ,"dataType":"zoned","formatting":"N-
+     A                                      umber","negNum":"-999.00","units":"-
+     A                                      ","designValue":"[STRST]"},"left":"-
+     A                                      285px","top":"140px","error message-
+     A                                      s":"1 message","width":"50px","erro-
+     A                                      r message":"Trust Not Found","error-
+     A                                       condition":{"fieldName":"errTrust"-
+     A                                      ,"customTrue":"","customFalse":"","-
+     A                                      dataType":"indicator","formatting":-
+     A                                      "Indicator","indFormat":"1 / 0"},"e-
+     A                                      rror enhanced mode":"1","allow fiel-
+     A                                      d exit":"true"},{"id":"Label2_copy"-
+     A                                      ,"field type":"output field","css c-
+     A                                      lass":"label","value":"Sub:","left"-
+     A                                      :"155px","top":"180px","width":"115-
+     A                                      px","color":"#000000","font family"-
+     A                                      :"Arial"},{"id":"TextBox2","field t-
+     A                                      ype":"textbox","css class":"input",-
+     A                                      "value":{"fieldName":"SSUB#","dataL-
+     A                                      ength":"3","decPos":"0","numSep":"f-
+     A                                      alse","zeroBalance":"false","numBla-
+     A                                      nkFill":"false","zeroFill":"false",-
+     A                                      "noExtraSpaces":"false","curSym":""-
+     A                                      ,"dataType":"zoned","formatting":"N-
+     A                                      umber","negNum":"-999.00","units":"-
+     A                                      ","designValue":"[SSUB#]"},"left":"-
+     A                                      285px","top":"180px","error message-
+     A                                      s":"1 message","width":"50px","erro-
+     A                                      r message":"Invalid Sub Number","er-
+     A                                      ror condition":{"fieldName":"errSub-
+     A                                      ","customTrue":"","customFalse":"",-
+     A                                      "dataType":"indicator","formatting"-
+     A                                      :"Indicator","indFormat":"1 / 0"},"-
+     A                                      error enhanced mode":"1","allow fie-
+     A                                      ld exit":"true"},{"id":"Label2_copy-
+     A                                      2","field type":"output field","css-
+     A                                       class":"label","value":"Account:",-
+     A                                      "left":"210px","top":"220px","width-
+     A                                      ":"60px","color":"#000000","font fa-
+     A                                      mily":"Arial"},{"id":"TextBox3","fi-
+     A                                      eld type":"textbox","css class":"in-
+     A                                      put","value":{"fieldName":"SACCT","-
+     A                                      dataLength":"4","decPos":"0","numSe-
+     A                                      p":"false","zeroBalance":"false","n-
+     A                                      umBlankFill":"false","zeroFill":"fa-
+     A                                      lse","noExtraSpaces":"false","curSy-
+     A                                      m":"","dataType":"zoned","formattin-
+     A                                      g":"Number","negNum":"-999.00","uni-
+     A                                      ts":"","designValue":"[SACCT]"},"le-
+     A                                      ft":"285px","top":"220px","width":"-
+     A                                      50px","error messages":"1 message",-
+     A                                      "error message":"Inva')
+     A                                  1  2HTML('lid account","error condition-
+     A                                      ":{"fieldName":"errAcct","customTru-
+     A                                      e":"","customFalse":"","dataType":"-
+     A                                      indicator","formatting":"Indicator"-
+     A                                      ,"indFormat":"1 / 0"},"error enhanc-
+     A                                      ed mode":"1","allow field exit":"tr-
+     A                                      ue"},{"id":"Label2_copy6","field ty-
+     A                                      pe":"output field","css class":"lab-
+     A                                      el","value":"Submission ID:","left"-
+     A                                      :"150px","top":"255px","width":"120-
+     A                                      px","color":"#000000","font family"-
+     A                                      :"Arial"},{"id":"TextBox3_copy","fi-
+     A                                      eld type":"textbox","css class":"in-
+     A                                      put","value":{"fieldName":"subid","-
+     A                                      dataLength":"12","trimLeading":"fal-
+     A                                      se","trimTrailing":"true","blankFil-
+     A                                      l":"false","rjZeroFill":"false","da-
+     A                                      taType":"char","formatting":"Text",-
+     A                                      "textTransform":"none","designValue-
+     A                                      ":"[subid]"},"error messages":"1 me-
+     A                                      ssage","left":"285px","top":"255px"-
+     A                                      ,"width":"105px","error message":"P-
+     A                                      lease Enter Submission ID","error c-
+     A                                      ondition":{"fieldName":"errID","cus-
+     A                                      tomTrue":"","customFalse":"","dataT-
+     A                                      ype":"indicator","formatting":"Indi-
+     A                                      cator","indFormat":"1 / 0"},"error -
+     A                                      enhanced mode":"1","read only":{"fi-
+     A                                      eldName":"subidPr","customTrue":"",-
+     A                                      "customFalse":"","dataType":"indica-
+     A                                      tor","formatting":"Indicator","indF-
+     A                                      ormat":"true / false"}},{"id":"Labe-
+     A                                      l5","field type":"output field","cs-
+     A                                      s class":"label","value":" - GBSEDI-
+     A                                      PRIME for Prime Accounts","text ali-
+     A                                      gn":"left","left":"390px","top":"25-
+     A                                      5px","width":"250px","color":"#0000-
+     A                                      00","font family":"Arial"},{"id":"L-
+     A                                      abel2_copy3","field type":"output f-
+     A                                      ield","css class":"label","value":"-
+     A                                      Med Group #: ","left":"180px","top"-
+     A                                      :"295px","width":"90px","visibility-
+     A                                      ":{"fieldName":"show","customTrue":-
+     A                                      "","customFalse":"","dataType":"ind-
+     A                                      icator","formatting":"Indicator","i-
+     A                                      ndFormat":"visible / hidden"},"colo-
+     A                                      r":"#000000","font family":"Arial"}-
+     A                                      ,{"id":"TextBox5","field type":"tex-
+     A                                      tbox","css class":"input","value":{-
+     A                                      "fieldName":"medgroup#","dataLength-
+     A                                      ":"7","trimLeading":"false","trimTr-
+     A                                      ailing":"true","blankFill":"false",-
+     A                                      "rjZeroFill":"false","dataType":"ch-
+     A                                      ar","formatting":"Text","textTransf-
+     A                                      orm":"none","designValue":"[medgrou-
+     A                                      p#]"},"left":"285px","top":"295px",-
+     A                                      "read only":{"fieldName":"subidPr",-
+     A                                      "customTrue":"","customFalse":"","d-
+     A                                      ataType":"indicator","formatting":"-
+     A                                      Indicator","indFormat":"true / fals-
+     A                                      e"},"visibility":{"fieldName":"show-
+     A                                      ","customTrue":"","customFalse":"",-
+     A                                      "dataType":"indicator","formatting"-
+     A                                      :"Indicator","indFormat":"visible /-
+     A                                       hidden"}},{"id":"Label2_copy4","fi-
+     A                                      eld type":"output field","css class-
+     A                                      ":"label","value":"Den Group #: ","-
+     A                                      left":"180px","top":"330px","width"-
+     A                                      :"90px","visibility":{"fieldName":"-
+     A                                      show","customTrue":"","customFalse"-
+     A                                      :"","dataType":"indicator","formatt-
+     A                                      ing":"Indicator","ind')
+     A                                  1  2HTML('Format":"visible / hidden"},"-
+     A                                      color":"#000000","font family":"Ari-
+     A                                      al"},{"id":"TextBox6","field type":-
+     A                                      "textbox","css class":"input","valu-
+     A                                      e":{"fieldName":"dengroup#","dataLe-
+     A                                      ngth":"7","trimLeading":"false","tr-
+     A                                      imTrailing":"true","blankFill":"fal-
+     A                                      se","rjZeroFill":"false","dataType"-
+     A                                      :"char","formatting":"Text","textTr-
+     A                                      ansform":"none","designValue":"[den-
+     A                                      group#]"},"left":"285px","top":"330-
+     A                                      px","read only":{"fieldName":"subid-
+     A                                      Pr","customTrue":"","customFalse":"-
+     A                                      ","dataType":"indicator","formattin-
+     A                                      g":"Indicator","indFormat":"true / -
+     A                                      false"},"visibility":{"fieldName":"-
+     A                                      show","customTrue":"","customFalse"-
+     A                                      :"","dataType":"indicator","formatt-
+     A                                      ing":"Indicator","indFormat":"visib-
+     A                                      le / hidden"}},{"id":"Label2_copy5"-
+     A                                      ,"field type":"output field","css c-
+     A                                      lass":"label","value":"Vis Group #:-
+     A                                       ","left":"180px","top":"365px","wi-
+     A                                      dth":"90px","visibility":{"fieldNam-
+     A                                      e":"show","customTrue":"","customFa-
+     A                                      lse":"","dataType":"indicator","for-
+     A                                      matting":"Indicator","indFormat":"v-
+     A                                      isible / hidden"},"color":"#000000"-
+     A                                      ,"font family":"Arial"},{"id":"Text-
+     A                                      Box7","field type":"textbox","css c-
+     A                                      lass":"input","value":{"fieldName":-
+     A                                      "visgroup#","dataLength":"7","trimL-
+     A                                      eading":"false","trimTrailing":"tru-
+     A                                      e","blankFill":"false","rjZeroFill"-
+     A                                      :"false","dataType":"char","formatt-
+     A                                      ing":"Text","textTransform":"none",-
+     A                                      "designValue":"[visgroup#]"},"left"-
+     A                                      :"285px","top":"365px","read only":-
+     A                                      {"fieldName":"subidPr","customTrue"-
+     A                                      :"","customFalse":"","dataType":"in-
+     A                                      dicator","formatting":"Indicator","-
+     A                                      indFormat":"true / false"},"visibil-
+     A                                      ity":{"fieldName":"show","customTru-
+     A                                      e":"","customFalse":"","dataType":"-
+     A                                      indicator","formatting":"Indicator"-
+     A                                      ,"indFormat":"visible / hidden"}},{-
+     A                                      "id":"Label3","field type":"output -
+     A                                      field","css class":"label","value":-
+     A                                      "Transmit?","left":"165px","top":"4-
+     A                                      05px","width":"105px","color":"#000-
+     A                                      000","font family":"Arial"},{"id":"-
+     A                                      Dropdown2","field type":"select box-
+     A                                      ","value":{"fieldName":"stransmit",-
+     A                                      "dataLength":"1","trimLeading":"fal-
+     A                                      se","trimTrailing":"true","blankFil-
+     A                                      l":"false","rjZeroFill":"false","da-
+     A                                      taType":"char","formatting":"Text",-
+     A                                      "textTransform":"none","designValue-
+     A                                      ":"[stransmit]"},"choices":"Y,N,1,2-
+     A                                      ,3,4,5,6,7,8,9","choice values":"Y,-
+     A                                      N,1,2,3,4,5,6,7,8,9","left":"285px"-
+     A                                      ,"top":"405px","width":"55px"},{"id-
+     A                                      ":"Label4","field type":"output fie-
+     A                                      ld","css class":"label","value":"Y=-
+     A                                      Transmit; N=Don''t Transmit","left"-
+     A                                      :"355px","top":"405px","width":"195-
+     A                                      px","color":"#000000","font family"-
+     A                                      :"Arial"},{"id":"Label4_copy","fiel-
+     A                                      d type":"output field","css class":-
+     A                                      "label","value":"1 - 9 = Testing","-
+     A                                      text align":"left","left":"355px","-
+     A                                      top":"425px","width":')
+     A                                  1  2HTML('"100px","color":"#000000","fo-
+     A                                      nt family":"Arial"},{"id":"Checkbox-
+     A                                      1","field type":"checkbox","css cla-
+     A                                      ss":"label","value":{"fieldName":"O-
+     A                                      Echeck","dataLength":"1","trimLeadi-
+     A                                      ng":"false","trimTrailing":"true","-
+     A                                      blankFill":"false","rjZeroFill":"fa-
+     A                                      lse","dataType":"char","formatting"-
+     A                                      :"Text","textTransform":"none","des-
+     A                                      ignValue":"[OEcheck]"},"left":"235p-
+     A                                      x","top":"460px","label":"OE File",-
+     A                                      "font weight":"bold","checked value-
+     A                                      ":"Y","color":"#000000","font famil-
+     A                                      y":"Arial"},{"id":"RadioButton1_cop-
+     A                                      y","field type":"radio button","val-
+     A                                      ue":"GBSCOBRA","radio button group"-
+     A                                      :{"fieldName":"cobraFlag","dataLeng-
+     A                                      th":"8","trimLeading":"false","trim-
+     A                                      Trailing":"true","blankFill":"false-
+     A                                      ","rjZeroFill":"false","dataType":"-
+     A                                      char","formatting":"Text","textTran-
+     A                                      sform":"none","decPos":"undefined",-
+     A                                      "refField":"undefined","keywords":[-
+     A                                      ]},"label":"GBS Cobra","left":"345p-
+     A                                      x","top":"460px","onclick":"applyPr-
+     A                                      operty(\"Layout3\", \"visibility\",-
+     A                                       \"hidden\");  \napplyProperty(\"La-
+     A                                      yout2\", \"visibility\", \"visible\-
+     A                                      ");  \n \napplyProperty(\"Layout3\"-
+     A                                      , \"field type\", \"layout\");\napp-
+     A                                      lyProperty(\"Layout2\", \"field typ-
+     A                                      e\", \"layout\");\n\napplyProperty(-
+     A                                      \"srchname\", \"set focus\", \"fals-
+     A                                      e\");\napplyProperty(\"srchCarId\",-
+     A                                       \"set focus\", \"true\");  \n\napp-
+     A                                      lyProperty(\"srchname\", \"field ty-
+     A                                      pe\", \"textbox\");\napplyProperty(-
+     A                                      \"srchCarId\", \"field type\", \"te-
+     A                                      xtbox\");","font weight":"bold","co-
+     A                                      lor":"#000000","font family":"Arial-
+     A                                      "},{"id":"RadioButton1_copy2","fiel-
+     A                                      d type":"radio button","value":"UHC-
+     A                                      COBRA","radio button group":{"field-
+     A                                      Name":"cobraFlag","dataLength":"8",-
+     A                                      "trimLeading":"false","trimTrailing-
+     A                                      ":"true","blankFill":"false","rjZer-
+     A                                      oFill":"false","dataType":"char","f-
+     A                                      ormatting":"Text","textTransform":"-
+     A                                      none","decPos":"undefined","refFiel-
+     A                                      d":"UNDEFINED","keywords":[]},"labe-
+     A                                      l":"UHC Cobra","left":"440px","top"-
+     A                                      :"460px","onclick":"applyProperty(\-
+     A                                      "Layout3\", \"visibility\", \"visib-
+     A                                      le\");  \napplyProperty(\"Layout2\"-
+     A                                      , \"visibility\", \"hidden\");  \n -
+     A                                      \napplyProperty(\"Layout3\", \"fiel-
+     A                                      d type\", \"layout\");\napplyProper-
+     A                                      ty(\"Layout2\", \"field type\", \"l-
+     A                                      ayout\");\n\napplyProperty(\"srchna-
+     A                                      me\", \"set focus\", \"true\");\nap-
+     A                                      plyProperty(\"srchCarId\", \"set fo-
+     A                                      cus\", \"false\");  \n\napplyProper-
+     A                                      ty(\"srchname\", \"field type\", \"-
+     A                                      textbox\");\napplyProperty(\"srchCa-
+     A                                      rId\", \"field type\", \"textbox\")-
+     A                                      ;","font weight":"bold","color":"#0-
+     A                                      00000","font family":"Arial"},{"id"-
+     A                                      :"Button2","field type":"graphic bu-
+     A                                      tton","value":"Add","left":"220px",-
+     A                                      "top":"530px","width":"100px","imag-
+     A                                      e source":"/profoundui/proddata/ima-
+     A                                      ges/icons/accept.png"')
+     A                                  1  2HTML(',"color":"#0ca81d","font weig-
+     A                                      ht":"bold","response":{"fieldName":-
+     A                                      "addRecord","customTrue":"","custom-
+     A                                      False":"","dataType":"indicator","f-
+     A                                      ormatting":"Indicator","indFormat":-
+     A                                      "1 / 0"},"shortcut key":"Enter"},{"-
+     A                                      id":"Button1","field type":"graphic-
+     A                                       button","value":"Cancel","left":"4-
+     A                                      10px","top":"530px","width":"100px"-
+     A                                      ,"image source":"/profoundui/prodda-
+     A                                      ta/images/icons/cancel.png","color"-
+     A                                      :"#b11919","font weight":"bold","re-
+     A                                      sponse":{"fieldName":"btnExtAdd","c-
+     A                                      ustomTrue":"","customFalse":"","dat-
+     A                                      aType":"indicator","formatting":"In-
+     A                                      dicator","indFormat":"1 / 0"},"shor-
+     A                                      tcut key":"Escape"},{"id":"Label1",-
+     A                                      "field type":"output field","css cl-
+     A                                      ass":"label","value":"Prime: GBS Se-
+     A                                      lection will not send COBRA member"-
+     A                                      ,"left":"350px","top":"485px","widt-
+     A                                      h":"340px","text align":"left","col-
+     A                                      or":"#000000","font family":"Arial"-
+     A                                      },{"id":"Label1_copy","field type":-
+     A                                      "output field","css class":"label",-
+     A                                      "value":"UNET:  GBS Selection tells-
+     A                                       UHC we manage COBRA","left":"350px-
+     A                                      ","top":"505px","width":"340px","te-
+     A                                      xt align":"left","color":"#000000",-
+     A                                      "font family":"Arial"}]}')
+     A            ADDRECORD      1A  H
+     A            BTNEXTADD      1A  H
+     A            COBRAFLAG      8A  H
+     A            DENGROUP#      7A  H
+     A            ERRACCT        1A  H
+     A            ERRID          1A  H
+     A            ERRSUB         1A  H
+     A            ERRTRUST       1A  H
+     A            MEDGROUP#      7A  H
+     A            OECHECK        1A  H
+     A            SACCT          4S 0H
+     A            SHOW           1A  H
+     A            SSUB#          3S 0H
+     A            STRANSMIT      1A  H
+     A            STRST          3S 0H
+     A            SUBID         12A  H
+     A            SUBIDPR        1A  H
+     A            VISGROUP#      7A  H
+     A          R SELWINDOW
+     A                                  1  2HTML('QPUIREC3    ROVERLAY   0     -
+     A                                      RWINDOW    0     RASSUME    0     ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"selWindow","overlay":"true","as-
+     A                                      sume":"true","show as window":"true-
+     A                                      "},"items":[{"id":"Panel1","field t-
+     A                                      ype":"css panel","value":"Select Pl-
+     A                                      atform/Test Number","left":"370px",-
+     A                                      "top":"120px","width":"290px","heig-
+     A                                      ht":"185px","z index":"8","header t-
+     A                                      heme":"B - Blue","body theme":"C - -
+     A                                      Gray"},{"id":"CssButton2","field ty-
+     A                                      pe":"css button","value":"Cancel","-
+     A                                      left":"415px","top":"255px","width"-
+     A                                      :"90px","theme":"G - Red","small bu-
+     A                                      tton":"true","icon position":"left"-
+     A                                      ,"icon":"delete","response":{"field-
+     A                                      Name":"btnCancel","customTrue":"","-
+     A                                      customFalse":"","dataType":"indicat-
+     A                                      or","formatting":"Indicator","indFo-
+     A                                      rmat":"1 / 0"},"shortcut key":"Esca-
+     A                                      pe"},{"id":"CssButton2_copy","field-
+     A                                       type":"css button","value":"Accept-
+     A                                      ","response":{"fieldName":"btnRun",-
+     A                                      "customTrue":"","customFalse":"","d-
+     A                                      ataType":"indicator","formatting":"-
+     A                                      Indicator","indFormat":"1 / 0"},"th-
+     A                                      eme":"F - Green","icon position":"l-
+     A                                      eft","icon":"check","small button":-
+     A                                      "true","left":"535px","top":"255px"-
+     A                                      ,"width":"90px"},{"id":"TextBox1","-
+     A                                      field type":"textbox","css class":"-
+     A                                      input","value":{"fieldName":"selNum-
+     A                                      ber","dataLength":"1","decPos":"0",-
+     A                                      "numSep":"false","zeroBalance":"fal-
+     A                                      se","numBlankFill":"false","zeroFil-
+     A                                      l":"false","noExtraSpaces":"false",-
+     A                                      "curSym":"","dataType":"zoned","for-
+     A                                      matting":"Number","negNum":"-999.00-
+     A                                      ","units":"","designValue":"[selNum-
+     A                                      ber]"},"left":"530px","top":"205px"-
+     A                                      ,"width":"25px","height":"25px","fo-
+     A                                      nt size":"17px"},{"id":"Label4","fi-
+     A                                      eld type":"output field","css class-
+     A                                      ":"label","value":"Platform:","left-
+     A                                      ":"445px","top":"175px","width":"75-
+     A                                      px"},{"id":"Label4_copy","field typ-
+     A                                      e":"output field","css class":"labe-
+     A                                      l","value":"Testing Number:","left"-
+     A                                      :"400px","top":"210px","width":"120-
+     A                                      px"},{"id":"OutputField1","field ty-
+     A                                      pe":"output field","css class":"out-
+     A                                      putField","value":{"fieldName":"spl-
+     A                                      atform","dataLength":"6","trimLeadi-
+     A                                      ng":"false","trimTrailing":"true","-
+     A                                      blankFill":"false","rjZeroFill":"fa-
+     A                                      lse","dataType":"char","formatting"-
+     A                                      :"Text","textTransform":"none","des-
+     A                                      ignValue":"[splatform]"},"left":"53-
+     A                                      0px","top":"175px"}]}')
+     A            BTNCANCEL      1A  H
+     A            BTNRUN         1A  H
+     A            SELNUMBER      1S 0H
+     A            SPLATFORM      6A  H
+     A          R MSGWINDOW
+     A                                  1  2HTML('QPUIREC3    ROVERLAY   0     -
+     A                                      RWINDOW    0     RASSUME    0     ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"msgWindow","overlay":"true","as-
+     A                                      sume":"true","show as window":"true-
+     A                                      "},"items":[{"id":"Panel1","field t-
+     A                                      ype":"css panel","value":"Completio-
+     A                                      n Message","left":"370px","top":"12-
+     A                                      0px","width":"290px","height":"150p-
+     A                                      x","z index":"8","header theme":"F -
+     A                                      - Green","body theme":"C - Gray"},{-
+     A                                      "id":"CssButton2","field type":"css-
+     A                                       button","value":"OK","left":"470px-
+     A                                      ","top":"215px","width":"90px","the-
+     A                                      me":"F - Green","small button":"tru-
+     A                                      e","icon position":"left","icon":"d-
+     A                                      elete","response":{"fieldName":"btn-
+     A                                      OK","customTrue":"","customFalse":"-
+     A                                      ","dataType":"indicator","formattin-
+     A                                      g":"Indicator","indFormat":"1 / 0"}-
+     A                                      ,"shortcut key":"Enter"},{"id":"Lab-
+     A                                      el1","field type":"output field","c-
+     A                                      ss class":"label","value":{"fieldNa-
+     A                                      me":"compText","dataLength":"22","t-
+     A                                      rimLeading":"false","trimTrailing":-
+     A                                      "true","blankFill":"false","rjZeroF-
+     A                                      ill":"false","dataType":"char","for-
+     A                                      matting":"Text","textTransform":"no-
+     A                                      ne","designValue":"[compText]"},"le-
+     A                                      ft":"420px","top":"175px","width":"-
+     A                                      160px","font size":"19px"}]}')
+     A            BTNOK          1A  H
+     A            COMPTEXT      22A  H
+     A          R LOCKWINDOW
+     A                                  1  2HTML('QPUIREC3    ROVERLAY   0     -
+     A                                      RWINDOW    0     RASSUME    0     ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"lockWindow","overlay":"true","a-
+     A                                      ssume":"true","show as window":"tru-
+     A                                      e"},"items":[{"id":"Panel1","field -
+     A                                      type":"css panel","left":"370px","t-
+     A                                      op":"120px","width":"315px","height-
+     A                                      ":"200px","z index":"8","header the-
+     A                                      me":"G - Red","body theme":"C - Gra-
+     A                                      y"},{"id":"CssButton2","field type"-
+     A                                      :"css button","value":"OK","left":"-
+     A                                      480px","top":"245px","width":"90px"-
+     A                                      ,"theme":"F - Green","small button"-
+     A                                      :"true","icon position":"left","ico-
+     A                                      n":"delete","response":{"fieldName"-
+     A                                      :"btnOK","customTrue":"","customFal-
+     A                                      se":"","dataType":"indicator","form-
+     A                                      atting":"Indicator","indFormat":"1 -
+     A                                      / 0"},"shortcut key":"Enter"},{"id"-
+     A                                      :"Label1","field type":"output fiel-
+     A                                      d","css class":"label","value":{"fi-
+     A                                      eldName":"errorText","dataLength":"-
+     A                                      22","trimLeading":"false","trimTrai-
+     A                                      ling":"true","blankFill":"false","r-
+     A                                      jZeroFill":"false","dataType":"char-
+     A                                      ","formatting":"Text","textTransfor-
+     A                                      m":"none","designValue":"[errorText-
+     A                                      ]"},"left":"395px","top":"170px","w-
+     A                                      idth":"260px","font size":"19px","t-
+     A                                      ext align":"center"},{"id":"Label2"-
+     A                                      ,"field type":"output field","css c-
+     A                                      lass":"label","value":{"fieldName":-
+     A                                      "errorTitle","dataLength":"10","tri-
+     A                                      mLeading":"false","trimTrailing":"t-
+     A                                      rue","blankFill":"false","rjZeroFil-
+     A                                      l":"false","dataType":"char","forma-
+     A                                      tting":"Text","textTransform":"none-
+     A                                      ","designValue":"[errorTitle]"},"le-
+     A                                      ft":"435px","top":"135px","width":"-
+     A                                      150px","text align":"center","color-
+     A                                      ":"#FFFFFF"},{"id":"Label1_copy","f-
+     A                                      ield type":"output field","css clas-
+     A                                      s":"label","value":{"fieldName":"us-
+     A                                      erLock","dataLength":"50","trimLead-
+     A                                      ing":"false","trimTrailing":"true",-
+     A                                      "blankFill":"false","rjZeroFill":"f-
+     A                                      alse","dataType":"char","formatting-
+     A                                      ":"Text","textTransform":"none","de-
+     A                                      signValue":"[userLock]"},"font size-
+     A                                      ":"19px","text align":"center","lef-
+     A                                      t":"380px","top":"200px","width":"2-
+     A                                      90px"}]}')
+     A            BTNOK          1A  H
+     A            ERRORTEXT     22A  H
+     A            ERRORTITLE    10A  H
+     A            USERLOCK      50A  H
+     A          R TRNSWINDOW
+     A                                  1  2HTML('QPUIREC3    ROVERLAY   0     -
+     A                                      RWINDOW    0     RASSUME    0     ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"trnsWindow","overlay":"true","a-
+     A                                      ssume":"true","show as window":"tru-
+     A                                      e"},"items":[{"id":"Panel1","field -
+     A                                      type":"css panel","left":"370px","t-
+     A                                      op":"120px","width":"315px","height-
+     A                                      ":"200px","z index":"8","header the-
+     A                                      me":"E - Yellow","body theme":"C - -
+     A                                      Gray","value":"Approve to Productio-
+     A                                      n"},{"id":"CssButton2","field type"-
+     A                                      :"css button","value":"OK","left":"-
+     A                                      550px","top":"265px","width":"90px"-
+     A                                      ,"theme":"F - Green","small button"-
+     A                                      :"true","icon position":"left","ico-
+     A                                      n":"delete","response":{"fieldName"-
+     A                                      :"btnOK","customTrue":"","customFal-
+     A                                      se":"","dataType":"indicator","form-
+     A                                      atting":"Indicator","indFormat":"1 -
+     A                                      / 0"},"shortcut key":"Enter"},{"id"-
+     A                                      :"Label4_copy","field type":"output-
+     A                                       field","css class":"label","value"-
+     A                                      :"Approve Renewal Month:","left":"3-
+     A                                      80px","top":"200px","width":"175px"-
+     A                                      },{"id":"Dropdown2","field type":"s-
+     A                                      elect box","value":{"fieldName":"ap-
+     A                                      vNum","dataLength":"2","trimLeading-
+     A                                      ":"false","trimTrailing":"true","bl-
+     A                                      ankFill":"false","rjZeroFill":"fals-
+     A                                      e","dataType":"char","formatting":"-
+     A                                      Text","textTransform":"none","desig-
+     A                                      nValue":"[apvNum]"},"choices":"1,2,-
+     A                                      3,4,5,6,7,8,9,10,11,12","choice val-
+     A                                      ues":"1,2,3,4,5,6,7,8,9,10,11,12","-
+     A                                      left":"570px","top":"200px","width"-
+     A                                      :"55px"},{"id":"CssButton2_copy","f-
+     A                                      ield type":"css button","value":"Ca-
+     A                                      ncel","response":{"fieldName":"btnC-
+     A                                      ancel","customTrue":"","customFalse-
+     A                                      ":"","dataType":"indicator","format-
+     A                                      ting":"Indicator","indFormat":"1 / -
+     A                                      0"},"theme":"G - Red","icon positio-
+     A                                      n":"left","icon":"delete","small bu-
+     A                                      tton":"true","shortcut key":"Escape-
+     A                                      ","left":"420px","top":"265px","wid-
+     A                                      th":"90px"}]}')
+     A            APVNUM         2A  H
+     A            BTNCANCEL      1A  H
+     A            BTNOK          1A  H
+     A          R PLANWINDOW
+     A                                  1  2HTML('QPUIREC3    ROVERLAY   0     -
+     A                                      RWINDOW    0     RASSUME    0     ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"planWindow","overlay":"true","a-
+     A                                      ssume":"true","show as window":"tru-
+     A                                      e"},"items":[{"id":"Panel1","field -
+     A                                      type":"css panel","left":"370px","t-
+     A                                      op":"120px","width":"315px","height-
+     A                                      ":"200px","z index":"8","header the-
+     A                                      me":"E - Yellow","body theme":"C - -
+     A                                      Gray","value":"Create Plans for Ren-
+     A                                      ewal Month"},{"id":"CssButton2","fi-
+     A                                      eld type":"css button","value":"OK"-
+     A                                      ,"left":"550px","top":"265px","widt-
+     A                                      h":"90px","theme":"F - Green","smal-
+     A                                      l button":"true","icon position":"l-
+     A                                      eft","icon":"delete","response":{"f-
+     A                                      ieldName":"btnOK","customTrue":"","-
+     A                                      customFalse":"","dataType":"indicat-
+     A                                      or","formatting":"Indicator","indFo-
+     A                                      rmat":"1 / 0"},"shortcut key":"Ente-
+     A                                      r"},{"id":"Label4_copy","field type-
+     A                                      ":"output field","css class":"label-
+     A                                      ","value":"Create Plans For Month:"-
+     A                                      ,"left":"380px","top":"200px","widt-
+     A                                      h":"175px"},{"id":"Dropdown2","fiel-
+     A                                      d type":"select box","value":{"fiel-
+     A                                      dName":"apvMonth","dataLength":"2",-
+     A                                      "trimLeading":"false","trimTrailing-
+     A                                      ":"true","blankFill":"false","rjZer-
+     A                                      oFill":"false","dataType":"char","f-
+     A                                      ormatting":"Text","textTransform":"-
+     A                                      none","designValue":"[apvMonth]"},"-
+     A                                      choices":"1,2,3,4,5,6,7,8,9,10,11,1-
+     A                                      2","choice values":"1,2,3,4,5,6,7,8-
+     A                                      ,9,10,11,12","left":"570px","top":"-
+     A                                      200px","width":"55px"},{"id":"CssBu-
+     A                                      tton2_copy","field type":"css butto-
+     A                                      n","value":"Cancel","response":{"fi-
+     A                                      eldName":"btnCancel","customTrue":"-
+     A                                      ","customFalse":"","dataType":"indi-
+     A                                      cator","formatting":"Indicator","in-
+     A                                      dFormat":"1 / 0"},"theme":"G - Red"-
+     A                                      ,"icon position":"left","icon":"del-
+     A                                      ete","small button":"true","shortcu-
+     A                                      t key":"Escape","left":"420px","top-
+     A                                      ":"265px","width":"90px"}]}')
+     A            APVMONTH       2A  H
+     A            BTNCANCEL      1A  H
+     A            BTNOK          1A  H

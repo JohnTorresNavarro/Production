@@ -1,0 +1,1099 @@
+     A          R SFL1                      SFL
+     A            QPUI000001     1A  O  2  2
+     A            ACTRET         6A  H
+     A            ACTRET2        1A  H
+     A            AR             1A  H
+     A            BUTTONDSP      1A  H
+     A            BUTTONEDIT     1A  H
+     A            CODE           5A  H
+     A            ERRORRCD      10A  H
+     A            PDESC         40A  H
+     A            PLAN           4A  H
+     A            PPOLICY#       7A  H
+     A            SELPLAN        1A  H
+     A            STATE          3A  H
+     A          R QSFLCTL001                SFLCTL(SFL1)
+     A                                      SFLSIZ(0001)
+     A                                      SFLPAG(0001)
+     A                                      SFLDSP
+     A                                  1  2HTML('QPUISFLSFLCTL1')
+     A          R SFLCTL1
+     A                                  1  2HTML('QPUICTL1    SFL1      5    RS-
+     A                                      FLDSP    0    FSFLDSP    RSFLDSPCTL-
+     A                                       0    FSFLDSP    RSFLCLR    0    FS-
+     A                                      FLCLR    RSFLPAG    1    C2    16 R-
+     A                                      SFLSIZ    1    C2    17 0    0    ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"sflctl1"},"items":[{"id":"Grid1-
+     A                                      ","field type":"grid","css class":"-
+     A                                      crystal-grid","left":"10px","top":"-
+     A                                      150px","number of rows":"17","numbe-
+     A                                      r of columns":"7","column widths":"-
+     A                                      83,88,61,75,115,319,182","column he-
+     A                                      adings":"Action,Plan,State,Plan Var-
+     A                                      .<br>Code,Policy #,Plan Description-
+     A                                      ,Active/Retire","header height":"26-
+     A                                      ","row height":"28","height":"474px-
+     A                                      ","width":"924px","record format na-
+     A                                      me":"sfl1","display subfile":{"fiel-
+     A                                      dName":"sfldsp","customTrue":"","cu-
+     A                                      stomFalse":"","dataType":"indicator-
+     A                                      ","formatting":"Indicator","indForm-
+     A                                      at":"true / false"},"display contro-
+     A                                      l record":{"fieldName":"sfldsp","cu-
+     A                                      stomTrue":"","customFalse":"","data-
+     A                                      Type":"indicator","formatting":"Ind-
+     A                                      icator","indFormat":"true / false"}-
+     A                                      ,"clear subfile":{"fieldName":"sflc-
+     A                                      lr","customTrue":"","customFalse":"-
+     A                                      ","dataType":"indicator","formattin-
+     A                                      g":"Indicator","indFormat":"true / -
+     A                                      false"},"sortable columns":"true","-
+     A                                      resizable columns":"true","find opt-
+     A                                      ion":"true","filter option":"true",-
+     A                                      "reset option":"true","export optio-
+     A                                      n":"true","export file name":"uhcpl-
+     A                                      anexp","export with headings":"true-
+     A                                      ","show bar":"true","row font color-
+     A                                      ":{"fieldName":"errorRcd","dataLeng-
+     A                                      th":"10","trimLeading":"false","tri-
+     A                                      mTrailing":"true","blankFill":"fals-
+     A                                      e","rjZeroFill":"false","dataType":-
+     A                                      "char","formatting":"Text","textTra-
+     A                                      nsform":"none"},"xlsx export":"true-
+     A                                      "},{"id":"CssButton1","field type":-
+     A                                      "css button","value":"Back","left":-
+     A                                      "845px","top":"660px","width":"90px-
+     A                                      ","theme":"B - Blue","small button"-
+     A                                      :"true","icon position":"left","ico-
+     A                                      n":"delete","response":{"fieldName"-
+     A                                      :"btnExit","customTrue":"","customF-
+     A                                      alse":"","dataType":"indicator","fo-
+     A                                      rmatting":"Indicator","indFormat":"-
+     A                                      1 / 0"},"shortcut key":"Escape"},{"-
+     A                                      id":"Label1","field type":"output f-
+     A                                      ield","css class":"label","value":{-
+     A                                      "fieldName":"PGMNAME","dataLength":-
+     A                                      "10","trimLeading":"false","trimTra-
+     A                                      iling":"true","blankFill":"false","-
+     A                                      rjZeroFill":"false","dataType":"cha-
+     A                                      r","formatting":"Text","textTransfo-
+     A                                      rm":"none","designValue":"[PGMNAME]-
+     A                                      "},"font size":"12px","font weight"-
+     A                                      :"normal","text align":"left","left-
+     A                                      ":"15px","top":"650px","width":"90p-
+     A                                      x"},{"id":"HtmlContainer1_copy","fi-
+     A                                      eld type":"html container","white s-
+     A                                      pace":"normal","html":"This is here-
+     A                                       to left justify the page in Genie"-
+     A                                      ,"left":"830px","top":"15px","heigh-
+     A                                      t":"75px","width":"105px","visibili-
+     A                                      ty":"hidden"},{"id":"CssButton3","f-
+     A                                      ield type":"css button","value":"Re-
+     A                                      fresh","left":"580px","top":"660px"-
+     A                                      ,"width":"90px","theme":"E - Yellow-
+     A                                      ","small button":"true","response":-
+     A                                      {"fieldName":"btnRefresh","customTr-
+     A                                      ue":"","customFalse":')
+     A                                  1  2HTML('"","dataType":"indicator","fo-
+     A                                      rmatting":"Indicator","indFormat":"-
+     A                                      1 / 0"},"shortcut key":"F5"},{"id":-
+     A                                      "OutputField9","field type":"output-
+     A                                       field","css class":"outputField","-
+     A                                      value":{"fieldName":"Title","dataLe-
+     A                                      ngth":"30","trimLeading":"false","t-
+     A                                      rimTrailing":"true","blankFill":"fa-
+     A                                      lse","rjZeroFill":"false","dataType-
+     A                                      ":"char","formatting":"Text","textT-
+     A                                      ransform":"none","designValue":"[Ti-
+     A                                      tle]"},"left":"20px","top":"80px","-
+     A                                      font size":"20px","font weight":"bo-
+     A                                      ld"},{"id":"CssButton2","field type-
+     A                                      ":"css button","value":"Add","left"-
+     A                                      :"710px","top":"660px","width":"90p-
+     A                                      x","theme":"F - Green","small butto-
+     A                                      n":"true","icon position":"left","i-
+     A                                      con":"check","response":{"fieldName-
+     A                                      ":"buttonAdd","customTrue":"","cust-
+     A                                      omFalse":"","dataType":"indicator",-
+     A                                      "formatting":"Indicator","indFormat-
+     A                                      ":"1 / 0"}},{"id":"Label2","field t-
+     A                                      ype":"output field","css class":"la-
+     A                                      bel","value":"-","left":"50px","top-
+     A                                      ":"120px","width":"25px","text alig-
+     A                                      n":"center"},{"id":"Label2_copy","f-
+     A                                      ield type":"output field","css clas-
+     A                                      s":"label","value":"-","text align"-
+     A                                      :"center","left":"120px","top":"120-
+     A                                      px","width":"25px"},{"id":"Label2_c-
+     A                                      opy2","field type":"output field","-
+     A                                      css class":"label","value":":","tex-
+     A                                      t align":"center","left":"290px","t-
+     A                                      op":"120px","width":"25px","height"-
+     A                                      :"15px"},{"id":"OutputField5","fiel-
+     A                                      d type":"output field","css class":-
+     A                                      "outputField","value":{"fieldName":-
+     A                                      "ttrst","dataLength":"3","trimLeadi-
+     A                                      ng":"false","trimTrailing":"true","-
+     A                                      blankFill":"false","rjZeroFill":"fa-
+     A                                      lse","dataType":"char","formatting"-
+     A                                      :"Text","textTransform":"none","des-
+     A                                      ignValue":"[ttrst]"},"left":"10px",-
+     A                                      "top":"120px"},{"id":"OutputField6"-
+     A                                      ,"field type":"output field","css c-
+     A                                      lass":"outputField","value":{"field-
+     A                                      Name":"tsub#","dataLength":"3","tri-
+     A                                      mLeading":"false","trimTrailing":"t-
+     A                                      rue","blankFill":"false","rjZeroFil-
+     A                                      l":"false","dataType":"char","forma-
+     A                                      tting":"Text","textTransform":"none-
+     A                                      ","designValue":"[tsub#]"},"left":"-
+     A                                      75px","top":"120px"},{"id":"OutputF-
+     A                                      ield7","field type":"output field",-
+     A                                      "css class":"outputField","value":{-
+     A                                      "fieldName":"tacct","dataLength":"4-
+     A                                      ","trimLeading":"false","trimTraili-
+     A                                      ng":"true","blankFill":"false","rjZ-
+     A                                      eroFill":"false","dataType":"char",-
+     A                                      "formatting":"Text","textTransform"-
+     A                                      :"none","designValue":"[tacct]"},"l-
+     A                                      eft":"145px","top":"120px"},{"id":"-
+     A                                      OutputField8","field type":"output -
+     A                                      field","css class":"outputField","v-
+     A                                      alue":{"fieldName":"taname","dataLe-
+     A                                      ngth":"40","trimLeading":"false","t-
+     A                                      rimTrailing":"true","blankFill":"fa-
+     A                                      lse","rjZeroFill":"false","dataType-
+     A                                      ":"char","formatting":"Text","textT-
+     A                                      ransform":"none","designValue":"[ta-
+     A                                      name]"},"left":"315px')
+     A                                  1  2HTML('","top":"120px","width":"235p-
+     A                                      x"},{"id":"Label2_copy3","field typ-
+     A                                      e":"output field","css class":"labe-
+     A                                      l","value":"-","text align":"center-
+     A                                      ","left":"190px","top":"120px","wid-
+     A                                      th":"25px"},{"id":"TextBox1","field-
+     A                                       type":"textbox","css class":"input-
+     A                                      ","value":{"fieldName":"posplan","d-
+     A                                      ataLength":"4","trimLeading":"false-
+     A                                      ","trimTrailing":"true","blankFill"-
+     A                                      :"false","rjZeroFill":"false","data-
+     A                                      Type":"char","formatting":"Text","t-
+     A                                      extTransform":"uppercase","designVa-
+     A                                      lue":"[posplan]"},"text transform":-
+     A                                      "uppercase","left":"215px","top":"1-
+     A                                      20px","width":"70px"},{"id":"CssBut-
+     A                                      ton4","field type":"css button","va-
+     A                                      lue":"Retire All","left":"845px","t-
+     A                                      op":"115px","width":"85px","theme":-
+     A                                      "D - Light Gray","small button":"tr-
+     A                                      ue","height":"25px","response":{"fi-
+     A                                      eldName":"buttonRet","customTrue":"-
+     A                                      ","customFalse":"","dataType":"indi-
+     A                                      cator","formatting":"Indicator","in-
+     A                                      dFormat":"1 / 0"}},{"id":"CssButton-
+     A                                      5","field type":"css button","value-
+     A                                      ":"Activate All","left":"745px","to-
+     A                                      p":"115px","width":"95px","theme":"-
+     A                                      B - Blue","small button":"true","he-
+     A                                      ight":"25px","response":{"fieldName-
+     A                                      ":"buttonAct","customTrue":"","cust-
+     A                                      omFalse":"","dataType":"indicator",-
+     A                                      "formatting":"Indicator","indFormat-
+     A                                      ":"1 / 0"}},{"id":"Label4","field t-
+     A                                      ype":"output field","css class":"la-
+     A                                      bel","value":"Purple = Error on rec-
+     A                                      ord","color":"#9900CC","text align"-
+     A                                      :"left","left":"135px","top":"655px-
+     A                                      ","width":"270px"},{"id":"Label4_co-
+     A                                      py","field type":"output field","cs-
+     A                                      s class":"label","value":"Red = Can-
+     A                                      celed plan","color":"#FF0000","text-
+     A                                       align":"left","left":"135px","top"-
+     A                                      :"675px","width":"270px"},{"id":"Ch-
+     A                                      eckbox1_copy","field type":"checkbo-
+     A                                      x","css class":"label","value":{"fi-
+     A                                      eldName":"activeOnly","dataLength":-
+     A                                      "1","trimLeading":"false","trimTrai-
+     A                                      ling":"true","blankFill":"false","r-
+     A                                      jZeroFill":"false","dataType":"char-
+     A                                      ","formatting":"Text","textTransfor-
+     A                                      m":"none","designValue":"[activeOnl-
+     A                                      y]"},"font weight":"bold","checked -
+     A                                      value":"Y","label":"Active Only","l-
+     A                                      eft":"420px","top":"660px","onclick-
+     A                                      ":"pui.click();"},{"id":"Button3","-
+     A                                      field type":"image","left":"45px","-
+     A                                      top":"5px","image source":"/profoun-
+     A                                      dui/proddata/images/icons/change.pn-
+     A                                      g","font weight":"bold","response":-
+     A                                      {"fieldName":"buttonEdit","customTr-
+     A                                      ue":"","customFalse":"","dataType":-
+     A                                      "indicator","formatting":"Indicator-
+     A                                      ","indFormat":"1 / 0"},"tool tip":"-
+     A                                      Edit","grid":"Grid1","column":"0"},-
+     A                                      {"id":"Button3_copy","field type":"-
+     A                                      image","response":{"fieldName":"but-
+     A                                      tonDsp","customTrue":"","customFals-
+     A                                      e":"","dataType":"indicator","forma-
+     A                                      tting":"Indicator","indFormat":"1 /-
+     A                                       0"},"font weight":"bold","image so-
+     A                                      urce":"/profoundui/us')
+     A                                  1  2HTML('erdata/images/View.PNG","left-
+     A                                      ":"5px","top":"0px","tool tip":"Vie-
+     A                                      w","grid":"Grid1","column":"0"},{"i-
+     A                                      d":"OutputField2","field type":"out-
+     A                                      put field","css class":"outputField-
+     A                                      ","value":{"fieldName":"state","dat-
+     A                                      aLength":"3","trimLeading":"false",-
+     A                                      "trimTrailing":"true","blankFill":"-
+     A                                      false","rjZeroFill":"false","dataTy-
+     A                                      pe":"char","formatting":"Text","tex-
+     A                                      tTransform":"none","designValue":"[-
+     A                                      state]"},"left":"5px","top":"5px","-
+     A                                      grid":"Grid1","column":"2"},{"id":"-
+     A                                      OutputField3","field type":"output -
+     A                                      field","css class":"outputField","v-
+     A                                      alue":{"fieldName":"pdesc","dataLen-
+     A                                      gth":"40","trimLeading":"false","tr-
+     A                                      imTrailing":"true","blankFill":"fal-
+     A                                      se","rjZeroFill":"false","dataType"-
+     A                                      :"char","formatting":"Text","textTr-
+     A                                      ansform":"none","designValue":"[pde-
+     A                                      sc]"},"left":"10px","top":"5px","gr-
+     A                                      id":"Grid1","column":"5"},{"id":"Ou-
+     A                                      tputField4","field type":"output fi-
+     A                                      eld","css class":"outputField","val-
+     A                                      ue":{"fieldName":"actret","dataLeng-
+     A                                      th":"6","trimLeading":"false","trim-
+     A                                      Trailing":"true","blankFill":"false-
+     A                                      ","rjZeroFill":"false","dataType":"-
+     A                                      char","formatting":"Text","textTran-
+     A                                      sform":"none","designValue":"[actre-
+     A                                      t]"},"left":"35px","top":"5px","vis-
+     A                                      ibility":"hidden","grid":"Grid1","c-
+     A                                      olumn":"6"},{"id":"OnOffSwitch1","f-
+     A                                      ield type":"on off switch","value":-
+     A                                      {"fieldName":"actret2","dataLength"-
+     A                                      :"1","trimLeading":"false","trimTra-
+     A                                      iling":"true","blankFill":"false","-
+     A                                      rjZeroFill":"false","dataType":"cha-
+     A                                      r","formatting":"Text","textTransfo-
+     A                                      rm":"none","designValue":"[actret2]-
+     A                                      "},"left":"10px","top":"5px","width-
+     A                                      ":"140px","height":"20px","on text"-
+     A                                      :"Active","off text":"Retire","on v-
+     A                                      alue":"1","off value":"0","onchange-
+     A                                      ":"pressKey(''ENTER'');","grid":"Gr-
+     A                                      id1","column":"6"},{"id":"OutputFie-
+     A                                      ld10","field type":"output field","-
+     A                                      css class":"outputField","value":{"-
+     A                                      fieldName":"ar","dataLength":"1","t-
+     A                                      rimLeading":"false","trimTrailing":-
+     A                                      "true","blankFill":"false","rjZeroF-
+     A                                      ill":"false","dataType":"char","for-
+     A                                      matting":"Text","textTransform":"no-
+     A                                      ne","designValue":"[ar]"},"left":"5-
+     A                                      px","top":"5px","visibility":"hidde-
+     A                                      n","grid":"Grid1","column":"6"},{"i-
+     A                                      d":"OutputField11","field type":"ou-
+     A                                      tput field","css class":"outputFiel-
+     A                                      d","value":{"fieldName":"ppolicy#",-
+     A                                      "dataLength":"7","trimLeading":"fal-
+     A                                      se","trimTrailing":"true","blankFil-
+     A                                      l":"false","rjZeroFill":"false","da-
+     A                                      taType":"char","formatting":"Text",-
+     A                                      "textTransform":"none","designValue-
+     A                                      ":"[ppolicy#]"},"left":"15px","top"-
+     A                                      :"5px","grid":"Grid1","column":"4"}-
+     A                                      ,{"id":"OutputField12","field type"-
+     A                                      :"output field","css class":"output-
+     A                                      Field","value":{"fieldName":"code",-
+     A                                      "dataLength":"5","trimLeading":"fal-
+     A                                      se","trimTrailing":"t')
+     A                                  1  2HTML('rue","blankFill":"false","rjZ-
+     A                                      eroFill":"false","dataType":"char",-
+     A                                      "formatting":"Text","textTransform"-
+     A                                      :"none","designValue":"[code]"},"le-
+     A                                      ft":"15px","top":"5px","grid":"Grid-
+     A                                      1","column":"3"},{"id":"OutputField-
+     A                                      1_copy2","field type":"hyperlink","-
+     A                                      css class":"link3","value":{"fieldN-
+     A                                      ame":"plan","dataLength":"4","trimL-
+     A                                      eading":"false","trimTrailing":"tru-
+     A                                      e","blankFill":"false","rjZeroFill"-
+     A                                      :"false","dataType":"char","formatt-
+     A                                      ing":"Text","textTransform":"none",-
+     A                                      "designValue":"[plan]"},"response":-
+     A                                      {"fieldName":"selplan","customTrue"-
+     A                                      :"","customFalse":"","dataType":"in-
+     A                                      dicator","formatting":"Indicator","-
+     A                                      indFormat":"1 / 0"},"left":"15px","-
+     A                                      top":"5px","tool tip":"Show Members-
+     A                                      ","grid":"Grid1","column":"1"}]}')
+     A            ACTIVEONLY     1A  H
+     A            BTNEXIT        1A  H
+     A            BTNREFRESH     1A  H
+     A            BUTTONACT      1A  H
+     A            BUTTONADD      1A  H
+     A            BUTTONRET      1A  H
+     A            PGMNAME       10A  H
+     A            POSPLAN        4A  H
+     A            SFLCLR         1A  H
+     A            SFLDSP         1A  H
+     A            TACCT          4A  H
+     A            TANAME        40A  H
+     A            TITLE         30A  H
+     A            TSUB#          3A  H
+     A            TTRST          3A  H
+     A          R MAINTDTL
+     A                                  1  2HTML('QPUIREC7    RWINDOW    0     -
+     A                                      REMSG      2    C8    TextBox1C17  -
+     A                                       Please Enter PlanFERRPLAN   REMSG -
+     A                                           2    C8    TextBox1C31   Inval-
+     A                                      id Plan for Trust/Sub/AcctFERRINVPL-
+     A                                      ANREMSG      2    C13   TextBox1_co-
+     A                                      pyC28   Please Enter State or "ALL"-
+     A                                      .FERRSTATE  REMSG      2    C14   T-
+     A                                      extBox1_copy2C22   Please Enter Pla-
+     A                                      n CodeFERRCODE   REMSG      2    C1-
+     A                                      4   TextBox1_copy3C27   Please Ente-
+     A                                      r Reporting CodeFERRRCODE  REMSG   -
+     A                                         2    C14   TextBox1_copy4C53   P-
+     A                                      olicy # must be the same as Rate Ma-
+     A                                      intenance Group #FERRPOL#   ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"Maintdtl","show as window":"tru-
+     A                                      e"},"items":[{"id":"Panel1","field -
+     A                                      type":"panel","left":"115px","top":-
+     A                                      "45px","width":"590px","height":"50-
+     A                                      0px","panel style":"Simple","z inde-
+     A                                      x":"8","value":"Maintain Record","t-
+     A                                      ext align":"center","font weight":"-
+     A                                      bold","font size":"12px"},{"id":"Ou-
+     A                                      tputField4","field type":"output fi-
+     A                                      eld","css class":"outputField","val-
+     A                                      ue":{"fieldName":"acctname","dataLe-
+     A                                      ngth":"40","trimLeading":"false","t-
+     A                                      rimTrailing":"true","blankFill":"fa-
+     A                                      lse","rjZeroFill":"false","dataType-
+     A                                      ":"char","formatting":"Text","textT-
+     A                                      ransform":"none","designValue":"[ac-
+     A                                      ctname]"},"left":"275px","top":"115-
+     A                                      px","width":"260px"},{"id":"Label2"-
+     A                                      ,"field type":"output field","css c-
+     A                                      lass":"label","value":"Trust:","lef-
+     A                                      t":"150px","top":"145px","width":"1-
+     A                                      20px"},{"id":"OutputField1","field -
+     A                                      type":"output field","css class":"o-
+     A                                      utputField","value":{"fieldName":"S-
+     A                                      TRST","dataLength":"3","decPos":"0"-
+     A                                      ,"numSep":"false","zeroBalance":"fa-
+     A                                      lse","numBlankFill":"false","zeroFi-
+     A                                      ll":"false","noExtraSpaces":"false"-
+     A                                      ,"curSym":"","dataType":"zoned","fo-
+     A                                      rmatting":"Number","negNum":"-999.0-
+     A                                      0","units":"","designValue":"[STRST-
+     A                                      ]"},"left":"285px","top":"145px"},{-
+     A                                      "id":"Label2_copy","field type":"ou-
+     A                                      tput field","css class":"label","va-
+     A                                      lue":"Sub#:","left":"155px","top":"-
+     A                                      170px","width":"115px"},{"id":"Outp-
+     A                                      utField2","field type":"output fiel-
+     A                                      d","css class":"outputField","value-
+     A                                      ":{"fieldName":"SSUB#","dataLength"-
+     A                                      :"3","decPos":"0","numSep":"false",-
+     A                                      "zeroBalance":"false","numBlankFill-
+     A                                      ":"false","zeroFill":"false","noExt-
+     A                                      raSpaces":"false","curSym":"","data-
+     A                                      Type":"zoned","formatting":"Number"-
+     A                                      ,"negNum":"-999.00","units":"","des-
+     A                                      ignValue":"[SSUB#]"},"left":"285px"-
+     A                                      ,"top":"170px"},{"id":"Label2_copy2-
+     A                                      ","field type":"output field","css -
+     A                                      class":"label","value":"Account:","-
+     A                                      left":"210px","top":"195px","width"-
+     A                                      :"60px"},{"id":"OutputField3","fiel-
+     A                                      d type":"output field","css class":-
+     A                                      "outputField","value":{"fieldName":-
+     A                                      "SACCT","dataLength":"4","decPos":"-
+     A                                      0","numSep":"false","zeroBalance":"-
+     A                                      false","numBlankFill":"false","zero-
+     A                                      Fill":"false","noExtraSpaces":"fals-
+     A                                      e","curSym":"","dataType":"zoned","-
+     A                                      formatting":"Number","negNum":"-999-
+     A                                      .00","units":"","designValue":"[SAC-
+     A                                      CT]"},"left":"285px","top":"195px"}-
+     A                                      ,{"id":"Label3","field type":"outpu-
+     A                                      t field","css class":"label","value-
+     A                                      ":"Plan:","left":"165px","top":"220-
+     A                                      px","width":"105px"},{"id":"TextBox-
+     A                                      1","field type":"textbox","css clas-
+     A                                      s":"input","value":{"fieldName":"sp-
+     A                                      lan","dataLength":"4","trimLeading"-
+     A                                      :"false","trimTrailing":"true","bla-
+     A                                      nkFill":"false","rjZeroFill":"false-
+     A                                      ","dataType":"char","')
+     A                                  1  2HTML('formatting":"Text","textTrans-
+     A                                      form":"uppercase","designValue":"[s-
+     A                                      plan]"},"left":"285px","top":"220px-
+     A                                      ","width":"60px","error messages":"-
+     A                                      2 messages","error message":"Please-
+     A                                       Enter Plan","error condition":{"fi-
+     A                                      eldName":"errPlan","customTrue":"",-
+     A                                      "customFalse":"","dataType":"indica-
+     A                                      tor","formatting":"Indicator","indF-
+     A                                      ormat":"1 / 0"},"error enhanced mod-
+     A                                      e":"1","error message 2":"Invalid P-
+     A                                      lan for Trust/Sub/Acct","error cond-
+     A                                      ition 2":{"fieldName":"errInvPlan",-
+     A                                      "customTrue":"","customFalse":"","d-
+     A                                      ataType":"indicator","formatting":"-
+     A                                      Indicator","indFormat":"1 / 0"},"er-
+     A                                      ror enhanced mode 2":"1","text tran-
+     A                                      sform":"uppercase"},{"id":"Label3_c-
+     A                                      opy","field type":"output field","c-
+     A                                      ss class":"label","value":"State:",-
+     A                                      "left":"165px","top":"245px","width-
+     A                                      ":"105px"},{"id":"TextBox1_copy","f-
+     A                                      ield type":"textbox","css class":"i-
+     A                                      nput","value":{"fieldName":"sstate"-
+     A                                      ,"dataLength":"3","trimLeading":"fa-
+     A                                      lse","trimTrailing":"true","blankFi-
+     A                                      ll":"false","rjZeroFill":"false","d-
+     A                                      ataType":"char","formatting":"Text"-
+     A                                      ,"textTransform":"uppercase","desig-
+     A                                      nValue":"[sstate]"},"error messages-
+     A                                      ":"1 message","left":"285px","top":-
+     A                                      "245px","width":"55px","error messa-
+     A                                      ge":"Please Enter State or \"ALL\".-
+     A                                      ","error condition":{"fieldName":"e-
+     A                                      rrState","customTrue":"","customFal-
+     A                                      se":"","dataType":"indicator","form-
+     A                                      atting":"Indicator","indFormat":"1 -
+     A                                      / 0"},"error enhanced mode":"1","te-
+     A                                      xt transform":"uppercase"},{"id":"L-
+     A                                      abel3_copy2","field type":"output f-
+     A                                      ield","css class":"label","value":"-
+     A                                      Plan Variation Code:","left":"130px-
+     A                                      ","top":"270px","width":"140px"},{"-
+     A                                      id":"TextBox1_copy2","field type":"-
+     A                                      textbox","css class":"input","value-
+     A                                      ":{"fieldName":"scode","dataLength"-
+     A                                      :"5","trimLeading":"false","trimTra-
+     A                                      iling":"true","blankFill":"false","-
+     A                                      rjZeroFill":"false","dataType":"cha-
+     A                                      r","formatting":"Text","textTransfo-
+     A                                      rm":"uppercase","designValue":"[sco-
+     A                                      de]"},"error messages":"1 message",-
+     A                                      "left":"285px","top":"270px","width-
+     A                                      ":"70px","error message":"Please En-
+     A                                      ter Plan Code","error condition":{"-
+     A                                      fieldName":"errCode","customTrue":"-
+     A                                      ","customFalse":"","dataType":"indi-
+     A                                      cator","formatting":"Indicator","in-
+     A                                      dFormat":"1 / 0"},"error enhanced m-
+     A                                      ode":"1","text transform":"uppercas-
+     A                                      e","color":{"fieldName":"errorColor-
+     A                                      ","dataLength":"10","trimLeading":"-
+     A                                      false","trimTrailing":"true","blank-
+     A                                      Fill":"false","rjZeroFill":"false",-
+     A                                      "dataType":"char","formatting":"Tex-
+     A                                      t","textTransform":"none"}},{"id":"-
+     A                                      Label3_copy3","field type":"output -
+     A                                      field","css class":"label","value":-
+     A                                      "Reporting Code:","left":"130px","t-
+     A                                      op":"295px","width":"140px"},{"id":-
+     A                                      "TextBox1_copy3","field type":"text-
+     A                                      box","css class":"inp')
+     A                                  1  2HTML('ut","value":{"fieldName":"src-
+     A                                      ode","dataLength":"4","trimLeading"-
+     A                                      :"false","trimTrailing":"true","bla-
+     A                                      nkFill":"false","rjZeroFill":"false-
+     A                                      ","dataType":"char","formatting":"T-
+     A                                      ext","textTransform":"uppercase","d-
+     A                                      esignValue":"[srcode]"},"error mess-
+     A                                      ages":"1 message","left":"285px","t-
+     A                                      op":"295px","width":"55px","error m-
+     A                                      essage":"Please Enter Reporting Cod-
+     A                                      e","error condition":{"fieldName":"-
+     A                                      errRCode","customTrue":"","customFa-
+     A                                      lse":"","dataType":"indicator","for-
+     A                                      matting":"Indicator","indFormat":"1-
+     A                                       / 0"},"error enhanced mode":"1","t-
+     A                                      ext transform":"uppercase"},{"id":"-
+     A                                      Label3_copy4","field type":"output -
+     A                                      field","css class":"label","value":-
+     A                                      "Policy Number:","left":"130px","to-
+     A                                      p":"320px","width":"140px"},{"id":"-
+     A                                      TextBox1_copy4","field type":"textb-
+     A                                      ox","css class":"input","value":{"f-
+     A                                      ieldName":"spol#","dataLength":"7",-
+     A                                      "trimLeading":"false","trimTrailing-
+     A                                      ":"true","blankFill":"false","rjZer-
+     A                                      oFill":"false","dataType":"char","f-
+     A                                      ormatting":"Text","textTransform":"-
+     A                                      uppercase","designValue":"[spol#]"}-
+     A                                      ,"error messages":"1 message","left-
+     A                                      ":"285px","top":"320px","width":"55-
+     A                                      px","text transform":"uppercase","e-
+     A                                      rror message":"Policy # must be the-
+     A                                       same as Rate Maintenance Group #",-
+     A                                      "error condition":{"fieldName":"err-
+     A                                      Pol#","customTrue":"","customFalse"-
+     A                                      :"","dataType":"indicator","formatt-
+     A                                      ing":"Indicator","indFormat":"1 / 0-
+     A                                      "},"error enhanced mode":"1"},{"id"-
+     A                                      :"Button2","field type":"graphic bu-
+     A                                      tton","value":"Update","response":{-
+     A                                      "fieldName":"btnUpdRcd","customTrue-
+     A                                      ":"","customFalse":"","dataType":"i-
+     A                                      ndicator","formatting":"Indicator",-
+     A                                      "indFormat":"1 / 0"},"color":"#0ca8-
+     A                                      1d","font weight":"bold","image sou-
+     A                                      rce":"/profoundui/proddata/images/i-
+     A                                      cons/accept.png","left":"230px","to-
+     A                                      p":"400px","width":"100px"},{"id":"-
+     A                                      Button1","field type":"graphic butt-
+     A                                      on","value":"Cancel","left":"415px"-
+     A                                      ,"top":"400px","width":"100px","ima-
+     A                                      ge source":"/profoundui/proddata/im-
+     A                                      ages/icons/cancel.png","color":"#b1-
+     A                                      1919","font weight":"bold","respons-
+     A                                      e":{"fieldName":"btnExtEdt","custom-
+     A                                      True":"","customFalse":"","dataType-
+     A                                      ":"indicator","formatting":"Indicat-
+     A                                      or","indFormat":"1 / 0"}},{"id":"Ch-
+     A                                      eckbox1","field type":"checkbox","v-
+     A                                      alue":{"fieldName":"ElecSig","dataL-
+     A                                      ength":"1","trimLeading":"false","t-
+     A                                      rimTrailing":"true","blankFill":"fa-
+     A                                      lse","rjZeroFill":"false","dataType-
+     A                                      ":"char","formatting":"Text","textT-
+     A                                      ransform":"none","designValue":"[El-
+     A                                      ecSig]"},"left":"440px","top":"360p-
+     A                                      x","label":"HSA Electronic Signatur-
+     A                                      e","checked value":"Y","visibility"-
+     A                                      :{"fieldName":"show","customTrue":"-
+     A                                      ","customFalse":"","dataType":"indi-
+     A                                      cator","formatting":"Indicator","in-
+     A                                      dFormat":"visible / h')
+     A                                  1  2HTML('idden"}},{"id":"Checkbox1_cop-
+     A                                      y","field type":"checkbox","label":-
+     A                                      "HSA Affirmation Indicator","left":-
+     A                                      "190px","top":"360px","checked valu-
+     A                                      e":"Y","value":{"fieldName":"AIInd"-
+     A                                      ,"dataLength":"1","trimLeading":"fa-
+     A                                      lse","trimTrailing":"true","blankFi-
+     A                                      ll":"false","rjZeroFill":"false","d-
+     A                                      ataType":"char","formatting":"Text"-
+     A                                      ,"textTransform":"none","designValu-
+     A                                      e":"[AIInd]"},"visibility":{"fieldN-
+     A                                      ame":"show","customTrue":"","custom-
+     A                                      False":"","dataType":"indicator","f-
+     A                                      ormatting":"Indicator","indFormat":-
+     A                                      "visible / hidden"}}]}')
+     A            ACCTNAME      40A  H
+     A            AIIND          1A  H
+     A            BTNEXTEDT      1A  H
+     A            BTNUPDRCD      1A  H
+     A            ELECSIG        1A  H
+     A            ERRCODE        1A  H
+     A            ERRINVPLAN     1A  H
+     A            ERRORCOLOR    10A  H
+     A            ERRPLAN        1A  H
+     A            ERRPOL#        1A  H
+     A            ERRRCODE       1A  H
+     A            ERRSTATE       1A  H
+     A            SACCT          4S 0H
+     A            SCODE          5A  H
+     A            SHOW           1A  H
+     A            SPLAN          4A  H
+     A            SPOL#          7A  H
+     A            SRCODE         4A  H
+     A            SSTATE         3A  H
+     A            SSUB#          3S 0H
+     A            STRST          3S 0H
+     A          R ADDDTL
+     A                                  1  2HTML('QPUIREC5    RWINDOW    0     -
+     A                                      REMSG      2    C8    TextBox1C31  -
+     A                                       Invalid Plan for Trust/Sub/AcctFER-
+     A                                      RINVPLANREMSG      2    C13   TextB-
+     A                                      ox1_copyC30   Please Enter "Y" or "-
+     A                                      N" or "X"FERRTRX    REMSG      2   -
+     A                                       C14   TextBox1_copy2C22   Please E-
+     A                                      nter Plan CodeFERRCODE   REMSG     -
+     A                                       2    C14   TextBox1_copy4C53   Pol-
+     A                                      icy # must be the same as Rate Main-
+     A                                      tenance Group #FERRPOL#   ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"Adddtl","show as window":"true"-
+     A                                      },"items":[{"id":"Panel1","field ty-
+     A                                      pe":"panel","left":"115px","top":"4-
+     A                                      5px","width":"590px","height":"500p-
+     A                                      x","panel style":"Simple","z index"-
+     A                                      :"8","value":"Add Record","text ali-
+     A                                      gn":"center","font weight":"bold","-
+     A                                      font size":"12px"},{"id":"OutputFie-
+     A                                      ld4","field type":"output field","c-
+     A                                      ss class":"outputField","value":{"f-
+     A                                      ieldName":"acctname","dataLength":"-
+     A                                      40","trimLeading":"false","trimTrai-
+     A                                      ling":"true","blankFill":"false","r-
+     A                                      jZeroFill":"false","dataType":"char-
+     A                                      ","formatting":"Text","textTransfor-
+     A                                      m":"none","designValue":"[acctname]-
+     A                                      "},"left":"275px","top":"115px","wi-
+     A                                      dth":"260px"},{"id":"Label2","field-
+     A                                       type":"output field","css class":"-
+     A                                      label","value":"Trust:","left":"150-
+     A                                      px","top":"145px","width":"120px"},-
+     A                                      {"id":"OutputField1","field type":"-
+     A                                      output field","css class":"outputFi-
+     A                                      eld","value":{"fieldName":"STRST","-
+     A                                      dataLength":"3","decPos":"0","numSe-
+     A                                      p":"false","zeroBalance":"false","n-
+     A                                      umBlankFill":"false","zeroFill":"fa-
+     A                                      lse","noExtraSpaces":"false","curSy-
+     A                                      m":"","dataType":"zoned","formattin-
+     A                                      g":"Number","negNum":"-999.00","uni-
+     A                                      ts":"","designValue":"[STRST]"},"le-
+     A                                      ft":"285px","top":"145px"},{"id":"L-
+     A                                      abel2_copy","field type":"output fi-
+     A                                      eld","css class":"label","value":"S-
+     A                                      ub#:","left":"155px","top":"170px",-
+     A                                      "width":"115px"},{"id":"OutputField-
+     A                                      2","field type":"output field","css-
+     A                                       class":"outputField","value":{"fie-
+     A                                      ldName":"SSUB#","dataLength":"3","d-
+     A                                      ecPos":"0","numSep":"false","zeroBa-
+     A                                      lance":"false","numBlankFill":"fals-
+     A                                      e","zeroFill":"false","noExtraSpace-
+     A                                      s":"false","curSym":"","dataType":"-
+     A                                      zoned","formatting":"Number","negNu-
+     A                                      m":"-999.00","units":"","designValu-
+     A                                      e":"[SSUB#]"},"left":"285px","top":-
+     A                                      "170px"},{"id":"Label2_copy2","fiel-
+     A                                      d type":"output field","css class":-
+     A                                      "label","value":"Account:","left":"-
+     A                                      210px","top":"195px","width":"60px"-
+     A                                      },{"id":"OutputField3","field type"-
+     A                                      :"output field","css class":"output-
+     A                                      Field","value":{"fieldName":"SACCT"-
+     A                                      ,"dataLength":"4","decPos":"0","num-
+     A                                      Sep":"false","zeroBalance":"false",-
+     A                                      "numBlankFill":"false","zeroFill":"-
+     A                                      false","noExtraSpaces":"false","cur-
+     A                                      Sym":"","dataType":"zoned","formatt-
+     A                                      ing":"Number","negNum":"-999.00","u-
+     A                                      nits":"","designValue":"[SACCT]"},"-
+     A                                      left":"285px","top":"195px"},{"id":-
+     A                                      "Label3","field type":"output field-
+     A                                      ","css class":"label","value":"Plan-
+     A                                      :","left":"165px","top":"220px","wi-
+     A                                      dth":"105px"},{"id":"TextBox1","fie-
+     A                                      ld type":"textbox","css class":"inp-
+     A                                      ut","value":{"fieldName":"splan","d-
+     A                                      ataLength":"4","trimLeading":"false-
+     A                                      ","trimTrailing":"true","blankFill"-
+     A                                      :"false","rjZeroFill":"false","data-
+     A                                      Type":"char","formatt')
+     A                                  1  2HTML('ing":"Text","textTransform":"-
+     A                                      uppercase","designValue":"[splan]"}-
+     A                                      ,"left":"285px","top":"220px","widt-
+     A                                      h":"60px","error messages":"1 messa-
+     A                                      ge","text transform":"uppercase","e-
+     A                                      rror message":"Invalid Plan for Tru-
+     A                                      st/Sub/Acct","error condition":{"fi-
+     A                                      eldName":"errInvPlan","customTrue":-
+     A                                      "","customFalse":"","dataType":"ind-
+     A                                      icator","formatting":"Indicator","i-
+     A                                      ndFormat":"1 / 0"},"error enhanced -
+     A                                      mode":"1"},{"id":"Label1_copy","fie-
+     A                                      ld type":"output field","css class"-
+     A                                      :"label","value":"-","text align":"-
+     A                                      center","left":"350px","top":"220px-
+     A                                      ","width":"25px"},{"id":"OutputFiel-
+     A                                      d4_copy","field type":"output field-
+     A                                      ","css class":"outputField","value"-
+     A                                      :{"fieldName":"spdesc","dataLength"-
+     A                                      :"40","trimLeading":"false","trimTr-
+     A                                      ailing":"true","blankFill":"false",-
+     A                                      "rjZeroFill":"false","dataType":"ch-
+     A                                      ar","formatting":"Text","textTransf-
+     A                                      orm":"none","designValue":"[spdesc]-
+     A                                      "},"left":"380px","top":"220px","wi-
+     A                                      dth":"260px"},{"id":"Label3_copy","-
+     A                                      field type":"output field","css cla-
+     A                                      ss":"label","value":"State:","left"-
+     A                                      :"165px","top":"245px","width":"105-
+     A                                      px"},{"id":"TextBox1_copy","field t-
+     A                                      ype":"textbox","css class":"input",-
+     A                                      "value":{"fieldName":"sstate","data-
+     A                                      Length":"3","trimLeading":"false","-
+     A                                      trimTrailing":"true","blankFill":"f-
+     A                                      alse","rjZeroFill":"false","dataTyp-
+     A                                      e":"char","formatting":"Text","text-
+     A                                      Transform":"uppercase","designValue-
+     A                                      ":"[sstate]"},"error messages":"1 m-
+     A                                      essage","error message":"Please Ent-
+     A                                      er \"Y\" or \"N\" or \"X\"","error -
+     A                                      condition":{"fieldName":"errTrx","c-
+     A                                      ustomTrue":"","customFalse":"","dat-
+     A                                      aType":"indicator","formatting":"In-
+     A                                      dicator","indFormat":"1 / 0"},"erro-
+     A                                      r enhanced mode":"1","left":"285px"-
+     A                                      ,"top":"245px","width":"55px","text-
+     A                                       transform":"uppercase"},{"id":"Lab-
+     A                                      el3_copy2","field type":"output fie-
+     A                                      ld","css class":"label","value":"Pl-
+     A                                      an Variation Code:","left":"130px",-
+     A                                      "top":"270px","width":"140px"},{"id-
+     A                                      ":"TextBox1_copy2","field type":"te-
+     A                                      xtbox","css class":"input","value":-
+     A                                      {"fieldName":"scode","dataLength":"-
+     A                                      5","trimLeading":"false","trimTrail-
+     A                                      ing":"true","blankFill":"false","rj-
+     A                                      ZeroFill":"false","dataType":"char"-
+     A                                      ,"formatting":"Text","textTransform-
+     A                                      ":"uppercase","designValue":"[scode-
+     A                                      ]"},"error messages":"1 message","l-
+     A                                      eft":"285px","top":"270px","width":-
+     A                                      "70px","error message":"Please Ente-
+     A                                      r Plan Code","error condition":{"fi-
+     A                                      eldName":"errCode","customTrue":"",-
+     A                                      "customFalse":"","dataType":"indica-
+     A                                      tor","formatting":"Indicator","indF-
+     A                                      ormat":"1 / 0"},"error enhanced mod-
+     A                                      e":"1","text transform":"uppercase"-
+     A                                      },{"id":"Label3_copy3","field type"-
+     A                                      :"output field","css class":"label"-
+     A                                      ,"value":"Reporting Code:","left":"-
+     A                                      135px","top":"295px",')
+     A                                  1  2HTML('"width":"135px"},{"id":"TextB-
+     A                                      ox1_copy3","field type":"textbox","-
+     A                                      css class":"input","value":{"fieldN-
+     A                                      ame":"srcode","dataLength":"4","tri-
+     A                                      mLeading":"false","trimTrailing":"t-
+     A                                      rue","blankFill":"false","rjZeroFil-
+     A                                      l":"false","dataType":"char","forma-
+     A                                      tting":"Text","textTransform":"uppe-
+     A                                      rcase","designValue":"[srcode]"},"l-
+     A                                      eft":"285px","top":"295px","width":-
+     A                                      "55px","text transform":"uppercase"-
+     A                                      },{"id":"Label3_copy4","field type"-
+     A                                      :"output field","css class":"label"-
+     A                                      ,"value":"Policy Number:","left":"1-
+     A                                      35px","top":"320px","width":"135px"-
+     A                                      },{"id":"TextBox1_copy4","field typ-
+     A                                      e":"textbox","css class":"input","v-
+     A                                      alue":{"fieldName":"spol#","dataLen-
+     A                                      gth":"7","trimLeading":"false","tri-
+     A                                      mTrailing":"true","blankFill":"fals-
+     A                                      e","rjZeroFill":"false","dataType":-
+     A                                      "char","formatting":"Text","textTra-
+     A                                      nsform":"uppercase","designValue":"-
+     A                                      [spol#]"},"left":"285px","top":"320-
+     A                                      px","width":"55px","text transform"-
+     A                                      :"uppercase","error message":"Polic-
+     A                                      y # must be the same as Rate Mainte-
+     A                                      nance Group #","error condition":{"-
+     A                                      fieldName":"errPol#","customTrue":"-
+     A                                      ","customFalse":"","dataType":"indi-
+     A                                      cator","formatting":"Indicator","in-
+     A                                      dFormat":"1 / 0"},"error enhanced m-
+     A                                      ode":"1","error messages":"1 messag-
+     A                                      e"},{"id":"Button2_copy","field typ-
+     A                                      e":"graphic button","value":"Add","-
+     A                                      response":{"fieldName":"addRecord",-
+     A                                      "customTrue":"","customFalse":"","d-
+     A                                      ataType":"indicator","formatting":"-
+     A                                      Indicator","indFormat":"1 / 0"},"co-
+     A                                      lor":"#0ca81d","font weight":"bold"-
+     A                                      ,"image source":"/profoundui/prodda-
+     A                                      ta/images/icons/accept.png","left":-
+     A                                      "230px","top":"400px","width":"100p-
+     A                                      x"},{"id":"Button1_copy","field typ-
+     A                                      e":"graphic button","value":"Cancel-
+     A                                      ","response":{"fieldName":"btnExtAd-
+     A                                      d","customTrue":"","customFalse":""-
+     A                                      ,"dataType":"indicator","formatting-
+     A                                      ":"Indicator","indFormat":"1 / 0"},-
+     A                                      "color":"#b11919","font weight":"bo-
+     A                                      ld","image source":"/profoundui/pro-
+     A                                      ddata/images/icons/cancel.png","lef-
+     A                                      t":"415px","top":"400px","width":"1-
+     A                                      00px"}]}')
+     A            ACCTNAME      40A  H
+     A            ADDRECORD      1A  H
+     A            BTNEXTADD      1A  H
+     A            ERRCODE        1A  H
+     A            ERRINVPLAN     1A  H
+     A            ERRPOL#        1A  H
+     A            ERRTRX         1A  H
+     A            SACCT          4S 0H
+     A            SCODE          5A  H
+     A            SPDESC        40A  H
+     A            SPLAN          4A  H
+     A            SPOL#          7A  H
+     A            SRCODE         4A  H
+     A            SSTATE         3A  H
+     A            SSUB#          3S 0H
+     A            STRST          3S 0H
+     A          R DSPDTL
+     A                                  1  2HTML('QPUIREC1    RWINDOW    0     -
+     A                                      ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"Dspdtl","show as window":"true"-
+     A                                      },"items":[{"id":"Panel1","field ty-
+     A                                      pe":"panel","left":"115px","top":"4-
+     A                                      5px","width":"590px","height":"500p-
+     A                                      x","panel style":"Simple","z index"-
+     A                                      :"8","value":"Display Record","text-
+     A                                       align":"center","font weight":"bol-
+     A                                      d","font size":"12px"},{"id":"Outpu-
+     A                                      tField4","field type":"output field-
+     A                                      ","css class":"outputField","value"-
+     A                                      :{"fieldName":"acctname","dataLengt-
+     A                                      h":"40","trimLeading":"false","trim-
+     A                                      Trailing":"true","blankFill":"false-
+     A                                      ","rjZeroFill":"false","dataType":"-
+     A                                      char","formatting":"Text","textTran-
+     A                                      sform":"none","designValue":"[acctn-
+     A                                      ame]"},"left":"275px","top":"115px"-
+     A                                      ,"width":"260px"},{"id":"Label2","f-
+     A                                      ield type":"output field","css clas-
+     A                                      s":"label","value":"Trust:","left":-
+     A                                      "150px","top":"145px","width":"120p-
+     A                                      x"},{"id":"OutputField1","field typ-
+     A                                      e":"output field","css class":"outp-
+     A                                      utField","value":{"fieldName":"STRS-
+     A                                      T","dataLength":"3","decPos":"0","n-
+     A                                      umSep":"false","zeroBalance":"false-
+     A                                      ","numBlankFill":"false","zeroFill"-
+     A                                      :"false","noExtraSpaces":"false","c-
+     A                                      urSym":"","dataType":"zoned","forma-
+     A                                      tting":"Number","negNum":"-999.00",-
+     A                                      "units":"","designValue":"[STRST]"}-
+     A                                      ,"left":"285px","top":"145px"},{"id-
+     A                                      ":"Label2_copy","field type":"outpu-
+     A                                      t field","css class":"label","value-
+     A                                      ":"Sub#:","left":"155px","top":"170-
+     A                                      px","width":"115px"},{"id":"OutputF-
+     A                                      ield2","field type":"output field",-
+     A                                      "css class":"outputField","value":{-
+     A                                      "fieldName":"SSUB#","dataLength":"3-
+     A                                      ","decPos":"0","numSep":"false","ze-
+     A                                      roBalance":"false","numBlankFill":"-
+     A                                      false","zeroFill":"false","noExtraS-
+     A                                      paces":"false","curSym":"","dataTyp-
+     A                                      e":"zoned","formatting":"Number","n-
+     A                                      egNum":"-999.00","units":"","design-
+     A                                      Value":"[SSUB#]"},"left":"285px","t-
+     A                                      op":"170px"},{"id":"Label2_copy2","-
+     A                                      field type":"output field","css cla-
+     A                                      ss":"label","value":"Account:","lef-
+     A                                      t":"210px","top":"195px","width":"6-
+     A                                      0px"},{"id":"OutputField3","field t-
+     A                                      ype":"output field","css class":"ou-
+     A                                      tputField","value":{"fieldName":"SA-
+     A                                      CCT","dataLength":"4","decPos":"0",-
+     A                                      "numSep":"false","zeroBalance":"fal-
+     A                                      se","numBlankFill":"false","zeroFil-
+     A                                      l":"false","noExtraSpaces":"false",-
+     A                                      "curSym":"","dataType":"zoned","for-
+     A                                      matting":"Number","negNum":"-999.00-
+     A                                      ","units":"","designValue":"[SACCT]-
+     A                                      "},"left":"285px","top":"195px"},{"-
+     A                                      id":"Label3","field type":"output f-
+     A                                      ield","css class":"label","value":"-
+     A                                      Plan:","left":"165px","top":"220px"-
+     A                                      ,"width":"105px"},{"id":"OutputFiel-
+     A                                      d4_copy","field type":"output field-
+     A                                      ","css class":"outputField","value"-
+     A                                      :{"fieldName":"splan","dataLength":-
+     A                                      "4","trimLeading":"false","trimTrai-
+     A                                      ling":"true","blankFill":"false","r-
+     A                                      jZeroFill":"false","d')
+     A                                  1  2HTML('ataType":"char","formatting":-
+     A                                      "Text","textTransform":"none","desi-
+     A                                      gnValue":"[splan]"},"left":"285px",-
+     A                                      "top":"220px","width":"60px"},{"id"-
+     A                                      :"Label3_copy","field type":"output-
+     A                                       field","css class":"label","value"-
+     A                                      :"State:","left":"165px","top":"245-
+     A                                      px","width":"105px"},{"id":"OutputF-
+     A                                      ield4_copy2","field type":"output f-
+     A                                      ield","css class":"outputField","va-
+     A                                      lue":{"fieldName":"sstate","dataLen-
+     A                                      gth":"3","trimLeading":"false","tri-
+     A                                      mTrailing":"true","blankFill":"fals-
+     A                                      e","rjZeroFill":"false","dataType":-
+     A                                      "char","formatting":"Text","textTra-
+     A                                      nsform":"none","designValue":"[ssta-
+     A                                      te]"},"left":"285px","top":"245px",-
+     A                                      "width":"60px"},{"id":"Label3_copy2-
+     A                                      ","field type":"output field","css -
+     A                                      class":"label","value":"Plan Variat-
+     A                                      ion Code:","left":"130px","top":"27-
+     A                                      0px","width":"140px"},{"id":"Output-
+     A                                      Field4_copy3","field type":"output -
+     A                                      field","css class":"outputField","v-
+     A                                      alue":{"fieldName":"scode","dataLen-
+     A                                      gth":"5","trimLeading":"false","tri-
+     A                                      mTrailing":"true","blankFill":"fals-
+     A                                      e","rjZeroFill":"false","dataType":-
+     A                                      "char","formatting":"Text","textTra-
+     A                                      nsform":"none","designValue":"[scod-
+     A                                      e]"},"left":"285px","top":"270px","-
+     A                                      width":"70px","color":{"fieldName":-
+     A                                      "errorColor","dataLength":"10","tri-
+     A                                      mLeading":"false","trimTrailing":"t-
+     A                                      rue","blankFill":"false","rjZeroFil-
+     A                                      l":"false","dataType":"char","forma-
+     A                                      tting":"Text","textTransform":"none-
+     A                                      "}},{"id":"Button1","field type":"g-
+     A                                      raphic button","value":"Cancel","le-
+     A                                      ft":"415px","top":"400px","width":"-
+     A                                      100px","image source":"/profoundui/-
+     A                                      proddata/images/icons/cancel.png","-
+     A                                      color":"#b11919","font weight":"bol-
+     A                                      d","response":{"fieldName":"btnExtD-
+     A                                      sp","customTrue":"","customFalse":"-
+     A                                      ","dataType":"indicator","formattin-
+     A                                      g":"Indicator","indFormat":"1 / 0"}-
+     A                                      },{"id":"OutputField4_copy4","field-
+     A                                       type":"output field","css class":"-
+     A                                      outputField","value":{"fieldName":"-
+     A                                      srcode","dataLength":"4","trimLeadi-
+     A                                      ng":"false","trimTrailing":"true","-
+     A                                      blankFill":"false","rjZeroFill":"fa-
+     A                                      lse","dataType":"char","formatting"-
+     A                                      :"Text","textTransform":"none","des-
+     A                                      ignValue":"[srcode]"},"left":"285px-
+     A                                      ","top":"295px","width":"60px"},{"i-
+     A                                      d":"Label3_copy3","field type":"out-
+     A                                      put field","css class":"label","val-
+     A                                      ue":"Reporting Code:","left":"130px-
+     A                                      ","top":"295px","width":"140px"},{"-
+     A                                      id":"Label3_copy4","field type":"ou-
+     A                                      tput field","css class":"label","va-
+     A                                      lue":"Policy Number:","left":"130px-
+     A                                      ","top":"320px","width":"140px"},{"-
+     A                                      id":"OutputField4_copy5","field typ-
+     A                                      e":"output field","css class":"outp-
+     A                                      utField","value":{"fieldName":"spol-
+     A                                      #","dataLength":"7","trimLeading":"-
+     A                                      false","trimTrailing":"true","blank-
+     A                                      Fill":"false","rjZeroFill":"false",-
+     A                                      "dataType":"char","fo')
+     A                                  1  2HTML('rmatting":"Text","textTransfo-
+     A                                      rm":"none","designValue":"[spol#]"}-
+     A                                      ,"left":"285px","top":"320px","widt-
+     A                                      h":"60px"},{"id":"Checkbox1_copy","-
+     A                                      field type":"checkbox","value":{"fi-
+     A                                      eldName":"AIInd","dataLength":"1","-
+     A                                      trimLeading":"false","trimTrailing"-
+     A                                      :"true","blankFill":"false","rjZero-
+     A                                      Fill":"false","dataType":"char","fo-
+     A                                      rmatting":"Text","textTransform":"n-
+     A                                      one","designValue":"[AIInd]"},"chec-
+     A                                      ked value":"Y","label":"HSA Affirma-
+     A                                      tion Indicator","left":"190px","top-
+     A                                      ":"360px","visibility":{"fieldName"-
+     A                                      :"show","customTrue":"","customFals-
+     A                                      e":"","dataType":"indicator","forma-
+     A                                      tting":"Indicator","indFormat":"vis-
+     A                                      ible / hidden"},"read only":"true"}-
+     A                                      ,{"id":"Checkbox1","field type":"ch-
+     A                                      eckbox","value":{"fieldName":"ElecS-
+     A                                      ig","dataLength":"1","trimLeading":-
+     A                                      "false","trimTrailing":"true","blan-
+     A                                      kFill":"false","rjZeroFill":"false"-
+     A                                      ,"dataType":"char","formatting":"Te-
+     A                                      xt","textTransform":"none","designV-
+     A                                      alue":"[ElecSig]"},"checked value":-
+     A                                      "Y","label":"HSA Electronic Signatu-
+     A                                      re","left":"440px","top":"360px","v-
+     A                                      isibility":{"fieldName":"show","cus-
+     A                                      tomTrue":"","customFalse":"","dataT-
+     A                                      ype":"indicator","formatting":"Indi-
+     A                                      cator","indFormat":"visible / hidde-
+     A                                      n"},"read only":"true"}]}')
+     A            ACCTNAME      40A  H
+     A            AIIND          1A  H
+     A            BTNEXTDSP      1A  H
+     A            ELECSIG        1A  H
+     A            ERRORCOLOR    10A  H
+     A            SACCT          4S 0H
+     A            SCODE          5A  H
+     A            SHOW           1A  H
+     A            SPLAN          4A  H
+     A            SPOL#          7A  H
+     A            SRCODE         4A  H
+     A            SSTATE         3A  H
+     A            SSUB#          3S 0H
+     A            STRST          3S 0H
+     A          R CHKWINDOW
+     A                                  1  2HTML('QPUIREC3    ROVERLAY   0     -
+     A                                      RWINDOW    0     RASSUME    0     ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"chkWindow","overlay":"true","as-
+     A                                      sume":"true","show as window":"true-
+     A                                      "},"items":[{"id":"Panel1","field t-
+     A                                      ype":"css panel","value":"HSA Flags-
+     A                                      ","left":"225px","top":"120px","wid-
+     A                                      th":"435px","height":"190px","z ind-
+     A                                      ex":"8","header theme":"F - Green",-
+     A                                      "body theme":"C - Gray"},{"id":"Htm-
+     A                                      lContainer1_copy","field type":"htm-
+     A                                      l container","white space":"normal"-
+     A                                      ,"html":"This is here to left justi-
+     A                                      fy the page in Genie","left":"890px-
+     A                                      ","top":"75px","height":"75px","wid-
+     A                                      th":"105px","visibility":"hidden"},-
+     A                                      {"id":"Checkbox1_copy","field type"-
+     A                                      :"checkbox","value":{"fieldName":"A-
+     A                                      IInd","dataLength":"1","trimLeading-
+     A                                      ":"false","trimTrailing":"true","bl-
+     A                                      ankFill":"false","rjZeroFill":"fals-
+     A                                      e","dataType":"char","formatting":"-
+     A                                      Text","textTransform":"none","desig-
+     A                                      nValue":"[AIInd]"},"checked value":-
+     A                                      "Y","label":"HSA Affirmation Indica-
+     A                                      tor","left":"250px","top":"205px"},-
+     A                                      {"id":"Checkbox1","field type":"che-
+     A                                      ckbox","value":{"fieldName":"ElecSi-
+     A                                      g","dataLength":"1","trimLeading":"-
+     A                                      false","trimTrailing":"true","blank-
+     A                                      Fill":"false","rjZeroFill":"false",-
+     A                                      "dataType":"char","formatting":"Tex-
+     A                                      t","textTransform":"none","designVa-
+     A                                      lue":"[ElecSig]"},"checked value":"-
+     A                                      Y","label":"HSA Electronic Signatur-
+     A                                      e","left":"465px","top":"205px"},{"-
+     A                                      id":"Button2_copy","field type":"gr-
+     A                                      aphic button","value":"Add","respon-
+     A                                      se":{"fieldName":"addCheck","custom-
+     A                                      True":"","customFalse":"","dataType-
+     A                                      ":"indicator","formatting":"Indicat-
+     A                                      or","indFormat":"1 / 0"},"color":"#-
+     A                                      0ca81d","font weight":"bold","image-
+     A                                       source":"/profoundui/proddata/imag-
+     A                                      es/icons/accept.png","left":"295px"-
+     A                                      ,"top":"255px","width":"100px"},{"i-
+     A                                      d":"Button1_copy","field type":"gra-
+     A                                      phic button","value":"Cancel","resp-
+     A                                      onse":{"fieldName":"cnlCheck","cust-
+     A                                      omTrue":"","customFalse":"","dataTy-
+     A                                      pe":"indicator","formatting":"Indic-
+     A                                      ator","indFormat":"1 / 0"},"color":-
+     A                                      "#b11919","font weight":"bold","ima-
+     A                                      ge source":"/profoundui/proddata/im-
+     A                                      ages/icons/cancel.png","left":"480p-
+     A                                      x","top":"255px","width":"100px"}]}-
+     A                                      ')
+     A            ADDCHECK       1A  H
+     A            AIIND          1A  H
+     A            CNLCHECK       1A  H
+     A            ELECSIG        1A  H

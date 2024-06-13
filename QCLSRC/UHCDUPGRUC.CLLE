@@ -1,0 +1,42 @@
+/*===================================================================*/
+/* UHCDUPGRUC - Get non matching Group/Policy# in UHC EDI            */
+/*===================================================================*/
+/* Date         Int  Description                                     */
+/* ----------   ---  ------------------------------------------------*/
+/* 01/17/2024   jt   Original creation                               */
+/*===================================================================*/
+
+Pgm
+
+Dcl  &Records   *dec   (10 0)
+
+Call uhcdupgru
+
+/* Check if file has any records...                                  */
+RtvMbrD uhccst#eru NbrCurRcd(&Records)
+If (&Records > 0) Then(+
+ Do)
+
+  /* Send errors back to users, if any...                            */
+   SQL2Eml 'select * from uhccst#eru' +
+           ToXLS('tmp/Cust#Policy#.xls') +
+           eMail(Brandon.Scarfield@amwins.com) +
+           Subj('Error in Cust#/Policy# - UNET')
+
+   SQL2Eml 'select * from uhccst#eru' +
+           ToXLS('tmp/Cust#Policy#.xls') +
+           eMail(Ronald.Maas@amwins.com) +
+           Subj('Error in Cust#/Policy# - UNET')
+
+   SQL2Eml 'select * from uhccst#eru' +
+           ToXLS('tmp/Cust#Policy#.xls') +
+           eMail(eric.develbiss@amwins.com) +
+           Subj('Error in Cust#/Policy# - UNET')
+EndDo
+
+
+/* End of program */
+EndPgm:
+EndPgm
+
+/*===================================================================*/

@@ -1,0 +1,114 @@
+     A                                      INDARA
+     A                                      REF(FSAGRPOFF)
+     A          R SCREEN1
+     A                                  1  2HTML('QPUIREC1    REMSG      2    C-
+     A                                      10   SelectBox1C19   Please Select -
+     A                                      ValueFERRSELECT ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"screen1"},"items":[{"id":"HtmlC-
+     A                                      ontainer1_copy","field type":"html -
+     A                                      container","white space":"normal","-
+     A                                      html":"This is here to left justify-
+     A                                       the page in Genie","left":"860px",-
+     A                                      "top":"45px","height":"75px","width-
+     A                                      ":"105px","visibility":"hidden"},{"-
+     A                                      id":"Layout1","field type":"layout"-
+     A                                      ,"css class":"blueprint-defaults","-
+     A                                      left":"160px","top":"100px","templa-
+     A                                      te":"css panel","header text":"Sele-
+     A                                      ct Platform","header theme":"bluepr-
+     A                                      int-light-blue-header","body theme"-
+     A                                      :"blueprint-white-body","height":"2-
+     A                                      15px","width":"445px","css class 2"-
+     A                                      :"blueprint-panel"},{"id":"OutputFi-
+     A                                      eld4_copy","field type":"output fie-
+     A                                      ld","css class":"outputField","valu-
+     A                                      e":{"fieldName":"e1ENVIR","dataLeng-
+     A                                      th":"15","trimLeading":"false","tri-
+     A                                      mTrailing":"true","blankFill":"fals-
+     A                                      e","rjZeroFill":"false","dataType":-
+     A                                      "char","formatting":"Text","textTra-
+     A                                      nsform":"none","designValue":"[e1EN-
+     A                                      VIR]"},"color":{"fieldName":"EnvCol-
+     A                                      or","dataLength":"10","trimLeading"-
+     A                                      :"false","trimTrailing":"true","bla-
+     A                                      nkFill":"false","rjZeroFill":"false-
+     A                                      ","dataType":"char","formatting":"T-
+     A                                      ext","textTransform":"none"},"font -
+     A                                      weight":"bold","text align":"center-
+     A                                      ","left":"260px","top":"70px","widt-
+     A                                      h":"270px","css class 2":"blueprint-
+     A                                      -defaults","css class 3":"blueprint-
+     A                                      -output-field"},{"id":"SelectBox1",-
+     A                                      "field type":"select box","css clas-
+     A                                      s":"blueprint-select-box","value":{-
+     A                                      "fieldName":"option","dataLength":"-
+     A                                      6","trimLeading":"false","trimTrail-
+     A                                      ing":"true","blankFill":"false","rj-
+     A                                      ZeroFill":"false","dataType":"char"-
+     A                                      ,"formatting":"Text","textTransform-
+     A                                      ":"none","designValue":"[option]"},-
+     A                                      "left":"175px","top":"25px","choice-
+     A                                      s":"Select Value,PRIME,UNET,USP","w-
+     A                                      idth":"150px","height":"25px","css -
+     A                                      class 2":"blueprint-defaults","choi-
+     A                                      ce values":",PRIME,UNET,USP","error-
+     A                                       message":"Please Select Value","er-
+     A                                      ror condition":{"fieldName":"errSel-
+     A                                      ect","customTrue":"","customFalse":-
+     A                                      "","dataType":"indicator","formatti-
+     A                                      ng":"Indicator","indFormat":"1 / 0"-
+     A                                      },"error enhanced mode":"1","error -
+     A                                      messages":"1 message","layout":"Lay-
+     A                                      out1","container":"1"},{"id":"Outpu-
+     A                                      tField1","field type":"output field-
+     A                                      ","css class":"label","value":"Sele-
+     A                                      ct:","left":"110px","top":"25px","c-
+     A                                      ss class 2":"blueprint-defaults","c-
+     A                                      ss class 3":"blueprint-label","layo-
+     A                                      ut":"Layout1","container":"1"},{"id-
+     A                                      ":"OutputField2","field type":"outp-
+     A                                      ut field","css class":"outputField"-
+     A                                      ,"value":{"fieldName":"PGMNAME","da-
+     A                                      taLength":"10","trimLeading":"false-
+     A                                      ","trimTrailing":"true","blankFill"-
+     A                                      :"false","rjZeroFill":"false","data-
+     A                                      Type":"char","formatting":"Text","t-
+     A                                      extTransform":"none","designValue":-
+     A                                      "[PGMNAME]"},"left":"')
+     A                                  1  2HTML('10px","top":"145px","css clas-
+     A                                      s 2":"blueprint-defaults","css clas-
+     A                                      s 3":"blueprint-output-field","layo-
+     A                                      ut":"Layout1","container":"1"},{"id-
+     A                                      ":"GraphicButton1","field type":"gr-
+     A                                      aphic button","css class":"pui-soli-
+     A                                      d-button-yes","value":"Accept","lef-
+     A                                      t":"220px","top":"135px","width":"1-
+     A                                      00px","icon position":"left","css c-
+     A                                      lass 2":"blueprint-defaults","icon"-
+     A                                      :"material:check","height":"30px","-
+     A                                      response":{"fieldName":"btnEnter","-
+     A                                      customTrue":"","customFalse":"","da-
+     A                                      taType":"indicator","formatting":"I-
+     A                                      ndicator","indFormat":"1 / 0"},"sho-
+     A                                      rtcut key":"Enter","layout":"Layout-
+     A                                      1","container":"1"},{"id":"GraphicB-
+     A                                      utton2","field type":"graphic butto-
+     A                                      n","css class":"pui-solid-button-no-
+     A                                      ","value":"Cancel","left":"330px","-
+     A                                      top":"135px","width":"100px","icon -
+     A                                      position":"left","css class 2":"blu-
+     A                                      eprint-defaults","icon":"material:c-
+     A                                      lear","height":"30px","response":{"-
+     A                                      fieldName":"btnExit","customTrue":"-
+     A                                      ","customFalse":"","dataType":"indi-
+     A                                      cator","formatting":"Indicator","in-
+     A                                      dFormat":"1 / 0"},"layout":"Layout1-
+     A                                      ","container":"1"}]}')
+     A            BTNENTER       1A  H
+     A            BTNEXIT        1A  H
+     A            E1ENVIR       15A  H
+     A            ENVCOLOR      10A  H
+     A            ERRSELECT      1A  H
+     A            OPTION         6A  H
+     A            PGMNAME       10A  H

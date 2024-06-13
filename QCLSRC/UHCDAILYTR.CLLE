@@ -1,0 +1,31 @@
+/*===================================================================*/
+/* UHCDAILYTR = UHC Daily Terms                                      */
+/*===================================================================*/
+/* Date         Int  Description                                     */
+/* ----------   ---  ------------------------------------------------*/
+/* 04/11/2024   jt   Original creation                               */
+/*===================================================================*/
+
+Pgm
+
+Dcl  &Date20    *char   20
+Dcl  &Date      *char   10
+Dcl  &Subject   *char   50
+Dcl  &FileName  *char   50
+
+/* Create subject...                                                          */
+  RtvJobA datetime(&Date20)
+  ChgVar &Date ( %Substring(&Date20 5 2) *cat '-' *cat %Substring(&Date20 7 2) +
+                *cat '-' *cat %Substring(&Date20 1 4) )
+
+  ChgVar &Subject ('UHC Daily Terms - ' *cat &Date)
+  ChgVar &FileName ('/tmp/uhc_terms_' *cat &date *cat '.xls')
+
+  SQL2Eml SQLStmt('select * from uhcunitrm') ToXLS(&FileName) +
+  eMail(gbs.qualityanalysts@amwins.com) Subj(&Subject)
+
+/* End of program */
+EndPgm:
+EndPgm
+
+/*===================================================================*/
