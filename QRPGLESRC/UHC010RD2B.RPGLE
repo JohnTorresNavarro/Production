@@ -7,6 +7,7 @@
       * ----------  ---   -------------------------------------------------------------
       * 07/31/2020  jt    Original creation
       * 02/23/2021  jt    Changed some logic
+      * 06/13/2021  jt    Test 2 separate comits
       *================================================================================
 
      fuhcdtlxu  uf   e           k disk    rename(uhcr:uhcDetail)
