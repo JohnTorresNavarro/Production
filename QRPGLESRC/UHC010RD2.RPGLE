@@ -19,7 +19,8 @@
       * 06/14/2024  jt    Syncronize
       * 06/14/2024  jt    Test push
       * 06/14/2024  jt    test synch again
-      * 06/14/202   jt    Learn synch/merge
+      * 06/14/2024  jt    Learn synch/merge
+      * 06/14/2024  jt    Learning still
       *================================================================================
 
      fuhcdtlxu  uf   e           k disk    rename(uhcr:uhcDetail)
