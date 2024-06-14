@@ -1,31 +1,32 @@
-/*===================================================================*/
-/* UHCDAILYTR = UHC Daily Terms                                      */
-/*===================================================================*/
-/* Date         Int  Description                                     */
-/* ----------   ---  ------------------------------------------------*/
-/* 04/11/2024   jt   Original creation                               */
-/*===================================================================*/
-
-Pgm
-
-Dcl  &Date20    *char   20
-Dcl  &Date      *char   10
-Dcl  &Subject   *char   50
-Dcl  &FileName  *char   50
-
-/* Create subject...                                                          */
-  RtvJobA datetime(&Date20)
-  ChgVar &Date ( %Substring(&Date20 5 2) *cat '-' *cat %Substring(&Date20 7 2) +
-                *cat '-' *cat %Substring(&Date20 1 4) )
-
-  ChgVar &Subject ('UHC Daily Terms - ' *cat &Date)
-  ChgVar &FileName ('/tmp/uhc_terms_' *cat &date *cat '.xls')
-
-  SQL2Eml SQLStmt('select * from uhcunitrm') ToXLS(&FileName) +
-  eMail(gbs.qualityanalysts@amwins.com) Subj(&Subject)
-
-/* End of program */
-EndPgm:
-EndPgm
-
-/*===================================================================*/
+000100240614/*===================================================================*/
+000200240614/* UHCDAILYTR = UHC Daily Terms                                      */
+000300240614/*===================================================================*/
+000400240614/* Date         Int  Description                                     */
+000500240614/* ----------   ---  ------------------------------------------------*/
+000600240614/* 04/11/2024   jt   Original creation                               */
+000700240614/* 06/14/2024   JA   Test Production                                 */
+000800240614/*===================================================================*/
+000900240614
+001000240614Pgm
+001100240614
+001200240614Dcl  &Date20    *char   20
+001300240614Dcl  &Date      *char   10
+001400240614Dcl  &Subject   *char   50
+001500240614Dcl  &FileName  *char   50
+001600240614
+001700240614/* Create subject...                                                          */
+001800240614  RtvJobA datetime(&Date20)
+001900240614  ChgVar &Date ( %Substring(&Date20 5 2) *cat '-' *cat %Substring(&Date20 7 2) +
+002000240614                *cat '-' *cat %Substring(&Date20 1 4) )
+002100240614
+002200240614  ChgVar &Subject ('UHC Daily Terms - ' *cat &Date)
+002300240614  ChgVar &FileName ('/tmp/uhc_terms_' *cat &date *cat '.xls')
+002400240614
+002500240614  SQL2Eml SQLStmt('select * from uhcunitrm') ToXLS(&FileName) +
+002600240614  eMail(gbs.qualityanalysts@amwins.com) Subj(&Subject)
+002700240614
+002800240614/* End of program */
+002900240614EndPgm:
+003000240614EndPgm
+003100240614
+003200240614/*===================================================================*/
