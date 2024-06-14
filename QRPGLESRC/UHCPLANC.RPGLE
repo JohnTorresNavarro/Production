@@ -15,6 +15,7 @@
       *                   to UHC Prime.
       * 06/09/2022   jt   Check for one space in plan in group #.
       * 06/14/2024   jt   Testing synch
+      * 06/14/2024   jt   Test sychc to RDi from GH
       *=========================================================================
       *
      fuhcplancr1uf   e           k disk    rename(uhcpcr:mainFile)
