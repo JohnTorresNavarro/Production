@@ -18,8 +18,12 @@
       * 06/14/2024  jt    2nd merge of 06/14
       * 06/14/2024  jt    Syncronize
       * 06/14/2024  jt    Test push
+<<<<<<< HEAD
       * 06/14/2024  jt    test synch again
       * 06/14/2024  jt    Learn synch/merge
+=======
+      * 06/14/2027  jt    test synch again
+>>>>>>> refs/remotes/origin/topicFM070
       *================================================================================
 
      fuhcdtlxu  uf   e           k disk    rename(uhcr:uhcDetail)
