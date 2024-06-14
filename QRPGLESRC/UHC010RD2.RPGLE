@@ -15,13 +15,6 @@
       * 06/13/2024  jt    test test test
       * 06/13/2024  jt    tttt
       * 06/14/2024  jt    testing merge
-      * 06/14/2024  jt    2nd merge of 06/14
-      * 06/14/2024  jt    Syncronize
-      * 06/14/2024  jt    Test push
-      * 06/14/2024  jt    test synch again
-      * 06/14/2024  jt    Learn synch/merge
-      * 06/14/2024  jt    Learning still
-      * 06/14/2024  jt    Practice more
       *================================================================================
 
      fuhcdtlxu  uf   e           k disk    rename(uhcr:uhcDetail)
