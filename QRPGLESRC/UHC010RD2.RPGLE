@@ -162,6 +162,7 @@
 
         today = %dec(%date());
         ttermdt = 0;
+        ttermdt = 0;
 
        endsr;
 
